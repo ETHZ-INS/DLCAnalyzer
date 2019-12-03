@@ -1,0 +1,1402 @@
+file;Experimenter;from;to;type;ID;DLCFile
+EPM_11_Jin.json;Jin;0;1;Start_End;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;2.023;2.648;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;2.711;3.627;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;3.627;5.294;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;7.252;8.294;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;8.294;8.981;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;12.502;14.231;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;17.981;18.836;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;20.336;21.523;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;21.794;22.69;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;25.981;26.711;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;28.106;29.273;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;34.356;35.44;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;40.086;41.106;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;44.377;45.336;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;46.669;48.252;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;50.627;52.002;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;53.523;56.148;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;57.898;58.877;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;61.627;62.169;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;62.294;63.294;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;63.294;63.877;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;64.44;65.273;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;75.47;76.044;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;77.773;78.461;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;87.578;88.981;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;92.648;95.002;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;98.689;99.461;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;99.731;101.981;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;105.231;106.815;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;107.606;108.94;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;110.898;112.294;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;115.044;116.961;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;118.836;119.836;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;125.981;127.856;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;135.752;137.023;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;137.023;138.023;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;140.398;141.69;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;142.69;143.981;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;144.377;145.273;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;150.065;151.856;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;152.461;153.794;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;156.919;158.523;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;160.127;161.252;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;165.981;168.065;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;169.106;191.377;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;207.836;211.002;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;214.794;216.273;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;216.398;218.815;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;225.523;226.898;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;231.356;234.836;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;234.981;239.19;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;245.377;246.773;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;250.752;253.502;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;260.294;262.794;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;264.502;266.023;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;266.481;267.94;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;270.523;272.398;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;273.086;306.336;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;313.127;316.627;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;319.711;321.169;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;321.544;323.544;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;323.731;325.627;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;325.856;326.898;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;331.356;335.565;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;336.19;338.023;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;338.69;340.315;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;344.981;345.544;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;348.169;350.002;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;358.44;360.606;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;365.502;367.773;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;370.69;371.69;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;377.398;379.523;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;381.606;383.565;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;383.898;387.211;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;394.419;396.19;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;396.468;398.148;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;401.981;403.544;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;406.94;408.023;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;410.169;411.19;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;411.981;413.481;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;420.023;421.086;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;423.451;424.315;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;425.69;429.398;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;430.669;432.023;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;435.856;437.106;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;445.586;447.044;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;447.252;448.606;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;448.882;450.669;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;452.669;455.565;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;463.752;465.273;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;466.002;467.898;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;477.565;478.919;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;510.856;541.815;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;541.877;543.336;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;543.58;553.338;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;556.909;558.671;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;563.046;566.005;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;566.604;571.338;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;577.921;579.713;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;582.63;584.463;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;592.921;594.963;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;601.544;602.606;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_Jin.json;Jin;602.606;603.04;Start_End;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;22.981;23.981;Start_End;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;24.711;26.023;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;26.711;27.544;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;29.231;30.523;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;31.336;32.836;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;36.311;37.377;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;37.981;39.169;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;40.606;42.294;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;43.148;44.669;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;49.481;50.544;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;56.211;57.752;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;60.169;61.044;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;62.877;64.169;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;65.565;69.419;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;69.856;70.919;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;72.398;73.169;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;77.302;79.377;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;86.836;87.981;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;99.94;101.94;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;109.294;111.981;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;117.919;119.315;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;120.227;121.731;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;122.294;126.065;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;130.898;132.705;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;133.231;134.544;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;135.002;136.627;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;143.654;144.19;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;145.648;146.981;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;148.19;151.273;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;151.461;152.648;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;163.94;165.252;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;169.815;171.961;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;178.502;179.752;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;183.44;186.398;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;188.981;190.856;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;193.586;199.148;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;201.419;203.294;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;210.023;213.294;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;215.815;218.377;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;226.035;228.503;Rearing;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;233.628;235.722;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;236.816;237.972;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;251.285;252.972;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;255.941;259.222;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;261.128;261.941;Start_End;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;268.628;270.722;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;271.722;276.878;Unprotected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;277.097;277.972;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;281.972;283.628;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;287.753;290.16;Rearing;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;295.91;297.691;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;298.16;318.535;Start_End;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;320.817;324.472;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;327.847;332.128;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;334.16;336.128;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;342.722;344.628;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;345.724;346.285;Start_End;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;346.753;347.441;Start_End;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;347.441;348.441;Rearing;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;348.819;353.097;Start_End;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;359.585;382.785;Start_End;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;386.066;388.16;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;392.586;395.711;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;402.148;405.169;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;407.148;410.981;Rearing;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;413.752;417.273;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;421.794;423.211;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;424.644;427.377;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;428.961;430.544;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;432.273;435.398;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;435.836;436.669;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;438.148;439.086;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;442.627;447.523;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;448.898;450.981;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;465.731;466.794;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;470.229;470.898;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;470.961;472.961;Rearing;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;473.107;473.794;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;475.231;475.731;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;480.252;486.731;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;492.065;495.731;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;500.544;501.544;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;501.648;504.606;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;507.752;511.086;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;519.19;520.461;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;522.315;524.856;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;526.565;558.356;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;561.37;596.752;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;598.523;600.086;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_Jin.json;Jin;620.368;621.28;Start_End;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;5.544;7.044;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;8.752;10.231;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;11.711;12.981;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;13.856;15.648;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;16.69;17.815;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;18.26;19.211;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;20.294;20.919;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;21.606;22.315;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;22.461;23.794;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;28.919;30.023;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;30.086;31.252;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;31.669;33.398;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;37.461;38.377;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;39.106;40.252;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;43.231;44.252;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;44.898;45.773;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;46.086;47.44;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;47.856;48.669;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;0;1.002;Start_End;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;51.356;51.94;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;52.065;53.065;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;53.919;56.544;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;57.169;62.648;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;62.94;64.648;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;69.023;69.731;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;70.002;71.44;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;71.69;72.502;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;76.836;77.419;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;80.877;81.502;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;78.856;79.419;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;82.627;83.544;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;90.106;91.336;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;97.627;98.586;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;100.294;100.94;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;102.252;102.836;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;104.002;104.877;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;104.877;105.711;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;111.252;113.294;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;118.169;130.169;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;133.836;136.731;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;141.106;142.315;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;143.315;143.815;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;144.044;144.711;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;145.523;146.294;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;148.648;153.69;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;155.065;157.648;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;157.794;159.023;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;159.794;160.606;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;162.19;163.565;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;164.252;165.44;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;165.836;168.398;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;172.148;175.356;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;175.544;176.919;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;179.169;180.94;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;181.086;183.148;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;183.398;184.398;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;185.148;186.044;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;189.981;192.898;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;195.836;196.356;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;200.044;200.523;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;203.19;203.648;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;205.231;205.752;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;211.419;212.773;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;214.481;215.169;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;217.461;219.294;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;219.898;223.836;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;224.669;228.586;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;229.211;230.336;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;230.836;233.377;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;233.898;235.148;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;235.711;237.877;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;244.211;246.252;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;246.398;250.044;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;259.565;262.398;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;266.752;267.315;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;268.856;269.252;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;272.877;273.648;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;276.023;276.94;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;277.211;278.315;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;278.69;279.398;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;282.106;288.419;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;289.211;291.315;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;292.315;295.44;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;297.106;300.523;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;304.586;308.44;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;314.148;315.877;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;316.981;321.294;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;323.356;324.481;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;325.356;326.023;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;326.19;327.19;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;328.273;328.856;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;342.127;345.94;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;346.794;350.169;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;350.586;353.565;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;361.231;362.461;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;362.627;365.294;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;368.211;370.542;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;380.252;380.877;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;382.606;383.565;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;383.961;384.606;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;386.461;387.377;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;388.336;389.377;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;389.419;390.023;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;391.586;417.919;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;419.752;450.481;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;451.461;452.836;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;455.106;458.377;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;458.981;461.398;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;466.752;471.336;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;474.586;476.419;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;479.836;481.19;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;490.356;492.044;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;496.273;497.252;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;498.252;499.523;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;502.336;503.461;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;510.065;511.398;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;515.627;519.419;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;524.377;529.086;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;531.919;537.44;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;537.752;540.398;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;540.523;541.836;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;541.94;546.836;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;548.648;551.94;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;559.336;562.981;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;567.169;569.377;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;570.127;572.44;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;575.94;579.023;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;590.815;591.502;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;597.44;599.481;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;600.044;603.169;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_Jin.json;Jin;602.731;603.2;Start_End;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;37.815;38.728;Start_End;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;39.127;39.773;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;39.919;41.377;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;44.877;45.877;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;46.565;47.252;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;47.419;48.023;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;50.898;51.815;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;52.127;53.586;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;54.627;55.127;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;55.481;56.273;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;57.961;60.836;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;62.002;62.523;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;62.961;63.961;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;64.981;66.419;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;66.481;67.044;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;70.252;71.086;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;71.794;72.648;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;72.961;74.231;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;74.252;75.252;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;75.252;75.731;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;76.356;77.815;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;78.356;79.336;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;79.648;80.336;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;81.752;82.627;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;88.648;96.544;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;98.106;99.523;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;99.711;101.752;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;101.815;102.273;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;102.356;103.231;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;103.231;103.711;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;104.273;104.711;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;106.856;107.356;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;107.815;108.377;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;109.94;111.481;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;118.502;119.127;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;119.606;120.523;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;121.461;122.627;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;126.377;128.252;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;133.815;137.315;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;138.815;139.627;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;143.627;145.336;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;146.802;148.086;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;148.211;149.106;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;149.106;149.69;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;150.002;170.127;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;177.836;179.44;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;181.919;183.461;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;183.981;185.294;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;187.877;188.648;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;188.648;189.336;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;190.273;191.836;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;196.669;198.419;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;198.523;206.94;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;208.19;211.898;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;214.481;215.44;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;220.856;222.461;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;222.461;223.211;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;224.19;224.961;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;225.294;226.627;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;226.627;259.044;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;262.356;264.023;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;265.729;266.586;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;269.711;271.231;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;271.231;306.627;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;307.729;309.419;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;310.54;312.94;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;312.94;314.002;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;314.377;331.19;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;331.844;332.273;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;337.586;338.69;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;339.046;339.586;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;341.565;342.773;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;343.098;344.098;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;346.052;412.919;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;417.877;419.211;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;419.959;420.669;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;424.461;425.252;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;430.245;431.044;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;438.19;476.086;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;479.199;502.586;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;507.502;509.94;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;511.169;514.336;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;517.294;548.961;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;554.481;555.523;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;556.752;600.794;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_Jin.json;Jin;602.461;603.04;Start_End;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;17.219;18.219;Start_End;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;21.336;23.169;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;26.273;27.273;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;27.544;29.836;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;31.711;32.856;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;33.127;34.065;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;34.273;35.127;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;38.005;38.981;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;44.44;45.065;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;45.669;46.565;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;46.836;47.981;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;48.086;48.836;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;50.315;51.023;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;52.169;53.336;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;54.419;55.731;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;56.502;57.544;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;57.731;58.565;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;58.683;59.683;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;63.481;64.336;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;66.106;67.086;Unprotected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;69.127;70.794;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;71.315;72.565;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;72.794;73.44;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;80.961;81.731;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;82.086;82.877;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;83.711;84.398;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;88.502;89.106;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;92.44;96.023;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;105.481;106.606;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;110.711;112.419;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;112.419;113.961;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;120.877;121.898;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;125.19;126.19;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;130.023;130.919;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;132.606;133.252;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;143.794;144.794;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;146.711;147.419;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;150.231;151.544;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;162.565;163.502;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;166.919;200.565;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;202.002;203.461;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;208.086;211.315;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;214.525;233.19;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;235.273;236.169;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;237.106;238.127;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;240.836;280.898;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;287.856;352.586;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;356.815;358.711;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;360.836;363.273;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;367.606;377.773;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;385.273;406.711;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;408.023;467.44;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;472.648;474.294;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;476.023;476.856;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;478.044;479.044;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;482.627;498.148;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;511.648;512.981;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;513.086;514.086;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;516.669;517.211;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;522.231;523.836;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;525.44;527.648;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;536.273;539.044;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;541.94;602.252;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_Jin.json;Jin;602.252;603.04;Start_End;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;0.002;1.08;Start/End;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;2.773;3.586;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;3.69;4.502;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;4.606;5.086;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;7.44;8.211;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;8.431;9.847;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;12.663;14.306;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;21.323;21.645;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;21.877;22.573;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;26.073;26.788;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;27.145;28.038;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;28.573;29.323;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;46.609;48.341;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;50.725;52.091;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;58.073;58.806;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;61.716;62.395;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;62.681;63.466;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;63.323;64.038;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;64.538;65.252;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;75.591;75.931;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;77.806;78.448;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;94.341;95.895;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;98.931;99.52;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;100.002;101.984;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;105.359;106.984;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;107.556;108.948;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;111.252;112.359;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;116.398;116.919;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;118.981;120.002;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;135.836;137.023;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;137.148;138.065;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;140.919;141.565;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;150.19;151.794;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;152.44;153.565;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;157.148;158.565;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;160.169;161.294;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;169.231;190.315;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;201.294;203.065;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;208.419;210.44;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;211.919;213.606;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;215.231;216.273;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;216.669;218.856;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;225.398;227.086;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;232.731;234.898;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;235.752;239.315;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;245.586;246.794;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;251.69;253.627;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;260.648;262.794;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;264.711;266.169;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;270.877;271.606;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;273.086;306.169;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;313.106;316.731;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;321.211;322.919;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;323.815;325.502;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;326.023;326.523;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;336.377;337.856;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;339.483;340.252;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;343.694;344.944;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;348.348;350.098;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;359.079;360.656;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;365.579;366.791;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;377.823;379.573;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;384.002;387.306;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;394.948;396.323;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;402.306;403.645;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;407.038;408.127;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;411.77;413.627;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;419.944;421.175;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;423.483;424.291;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;427.079;429.329;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;430.848;432.06;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;436.175;437.194;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;445.714;447.021;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;447.483;448.598;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;449.31;450.329;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;452.791;455.464;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;464.118;465.233;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;466.214;467.848;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;496.791;497.444;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;510.925;517.925;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;519.368;541.733;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;541.829;543.271;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;545.135;546.135;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;544.329;547.387;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;549.81;553.194;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;557.81;558.598;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;560.098;563.233;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;564.291;565.406;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;578.002;579.791;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;582.848;584.502;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;593.348;594.791;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;602.31;602.675;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;53.676;56.093;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_OS2.json;Oliver;410.176;411.176;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;22.901;23.901;Start/End;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;24.961;26.023;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;26.711;27.565;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;29.169;30.502;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;31.419;32.211;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;36.44;37.523;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;38.231;39.377;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;41.336;42.252;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;46.252;47.044;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;49.606;50.481;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;51.356;51.94;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;56.502;57.836;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;60.231;61.127;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;63.169;64.273;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;66.586;67.981;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;68.461;69.419;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;70.086;70.94;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;87.002;88.044;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;100.336;102.044;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;109.461;112.023;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;117.898;119.419;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;120.002;122.002;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;122.315;126.002;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;130.94;132.586;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;133.273;134.606;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;135.169;136.606;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;145.773;146.981;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;148.169;150.502;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;151.919;152.69;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;162.523;164.086;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;164.065;165.252;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;170.398;172.044;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;176.69;179.898;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;179.044;180.811;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;183.023;185.502;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;185.502;186.586;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;189.336;191.048;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;194.366;195.73;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;195.503;199.389;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;210.071;212.321;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;216.025;218.207;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;225.707;228.321;Rearing;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;233.071;235.116;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;236.798;238.162;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;250.821;253.003;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;261.207;261.662;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;269.525;270.321;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;272.275;277.025;Unprotected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;277.253;278.028;Unprotected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;281.639;283.639;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;286.912;287.866;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;288.139;290.298;Rearing;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;296.048;296.593;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;296.707;297.343;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;298.389;299.798;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;300.298;316.616;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;317.275;318.298;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;320.775;324.684;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;329.093;332.275;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;334.162;336.207;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;343.684;344.684;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;345.912;346.23;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;346.934;347.343;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;348.934;353.275;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;356.48;358.548;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;359.753;383.003;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;386.139;388.207;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;393.571;395.571;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;400.343;401.843;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;402.457;405.093;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;407.525;410.934;Rearing;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;422.139;423.139;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;425.753;427.412;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;429.298;430.503;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;432.321;433.48;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;433.639;435.162;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;438.343;439.253;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;443.389;447.571;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;449.025;450.934;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;465.616;466.843;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;466.753;467.343;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;470.275;470.775;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;471.298;473.003;Rearing;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;473.275;473.798;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;475.23;475.753;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;482.116;486.912;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;495.548;496.322;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;500.412;501.616;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;501.798;504.662;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;508.253;509.878;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;511.639;514.207;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;522.207;525.003;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;526.343;558.457;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;560.912;596.912;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_OS2.json;Oliver;620.139;621.207;Start/End;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;0.062;1.062;Start/End;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;5.94;6.961;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;8.815;10.086;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;11.794;13.002;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;14.106;15.669;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;16.752;17.919;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;18.315;19.211;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;22.565;23.752;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;31.752;33.356;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;43.398;44.148;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;45.002;45.815;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;46.231;47.523;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;48.023;48.773;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;52.044;53.065;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;53.981;56.544;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;57.231;59.69;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;59.856;61.356;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;61.523;62.627;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;63.273;64.565;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;70.252;71.44;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;71.856;72.502;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;94.523;97.69;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;97.773;98.836;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;109.586;110.731;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;111.336;113.398;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;118.169;130.127;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;133.836;136.773;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;141.273;142.815;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;143.356;144.002;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;144.231;144.836;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;145.648;146.231;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;148.815;151.481;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;151.815;153.606;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;154.856;157.648;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;157.898;159.148;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;162.606;163.627;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;164.294;165.523;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;166.231;168.419;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;172.336;175.252;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;175.919;177.086;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;179.273;180.94;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;181.231;183.169;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;183.461;184.648;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;185.231;186.065;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;190.502;192.919;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;217.377;219.398;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;220.273;223.794;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;224.794;228.752;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;229.356;230.398;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;230.856;233.294;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;233.794;235.065;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;236.336;237.898;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;244.336;246.356;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;263.877;264.919;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;277.023;278.565;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;282.231;288.648;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;289.377;291.315;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;292.315;295.544;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;298.273;300.481;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;304.898;308.336;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;313.648;321.377;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;325.556;327.606;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;339.433;341.147;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;342.933;346.004;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;346.968;350.147;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;350.575;353.79;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;368.825;370.575;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;389.683;451.111;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;388.254;389.575;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;451.468;452.968;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;455.79;458.29;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;459.004;461.504;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;462.004;462.361;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;474.54;476.611;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;479.861;481.218;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;490.504;492.147;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;497.611;499.611;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;501.433;503.825;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;515.611;519.647;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;524.504;529.147;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;532.04;537.468;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;537.968;540.504;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;542.04;545.933;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;549.361;551.897;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;556.254;558.04;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;559.325;562.968;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;567.254;569.218;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;570.147;572.433;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;575.254;579.075;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;597.825;599.575;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;600.04;602.861;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;602.861;603.2;Start/End;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;7.29;8.825;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;29.325;31.504;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;37.647;38.54;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;39.254;40.397;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;76.906;77.606;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;81.006;81.456;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;90.506;91.356;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;100.319;101.069;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;102.444;102.944;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;195.944;196.507;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;200.069;200.632;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;205.132;205.757;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;210.694;212.944;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;214.632;215.257;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;246.819;250.194;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;255.257;256.757;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;260.444;262.444;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;268.819;269.382;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;273.007;273.257;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;276.569;277.132;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;279.007;279.444;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;323.257;324.569;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;325.444;326.069;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;328.257;329.007;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;362.759;365.759;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;379.259;380.509;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;384.093;384.926;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;386.926;387.343;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;466.343;471.593;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;476.343;477.009;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_OS.json;Oliver;496.259;496.926;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;37.966;38.966;Start/End;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;39.356;39.648;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;42.981;43.94;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;44.961;45.961;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;46.773;47.398;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;47.637;48.031;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;51.17;51.836;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;52.475;53.059;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;54.642;55.281;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;55.698;56.392;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;56.586;56.655;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;58.059;59.281;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;60.475;60.92;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;65.309;66.503;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;70.086;71.475;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;72.253;72.586;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;73.281;74.253;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;74.42;75.392;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;76.503;77.725;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;78.753;79.378;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;79.478;80.653;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;81.928;82.628;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;88.632;94.382;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;94.882;96.319;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;98.194;98.586;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;99.503;99.92;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;98.586;99.475;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;100.364;100.948;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;101.364;101.864;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;101.864;102.253;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;102.42;103.364;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;103.253;103.614;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;106.864;107.17;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;107.948;108.198;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;110.364;111.503;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;115.725;116.281;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;121.975;122.503;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;126.586;128.253;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;132.725;133.475;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;134.031;137.059;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;139.031;139.392;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;144.031;145.198;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;133.281;145.116;Start/End;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;139.828;140.778;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;140.778;141.028;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;146.953;148.228;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;148.228;149.353;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;150.378;165.728;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;166.128;169.978;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;178.228;179.528;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;182.153;183.428;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;184.328;185.328;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;189.028;189.328;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;190.722;191.91;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;196.843;198.593;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;198.861;207.004;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;208.397;211.897;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;221.183;222.575;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;222.683;223.29;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;224.147;226.718;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;227.825;259.29;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;262.361;263.897;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;265.79;266.433;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;271.147;312.754;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;269.718;271.254;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;314.325;334.754;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;336.397;339.075;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;339.04;339.504;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;340.397;343.183;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;343.075;343.897;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;346.433;413.218;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;438.147;476.111;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;479.683;502.611;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;507.647;509.647;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;511.075;514.647;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;517.29;548.683;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;554.468;555.575;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;556.861;602.325;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_OS2.json;Oliver;602.325;603.04;Start/End;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;17.303;18.303;Start/End;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;17.315;18.315;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;19.231;20.086;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;21.398;22.377;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;22.523;23.315;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;27.627;29.94;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;32.148;32.919;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;33.356;34.294;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;34.44;35.19;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;38.106;39.148;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;45.836;46.648;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;47.127;48.065;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;48.169;48.94;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;50.419;51.086;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;52.273;53.377;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;54.523;55.836;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;56.544;57.586;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;57.731;58.627;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;63.481;64.377;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;65.461;66.065;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;66.169;67.19;Unprotected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;69.148;70.836;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;56;57;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;58.798;59.73;Unprotected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;71.377;72.591;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;72.859;73.609;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;82.163;82.895;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;83.77;84.448;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;88.538;89.127;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;92.448;94.823;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;94.931;96.127;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;112.627;114.02;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;112.627;113.627;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;112.591;114.073;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;120.859;121.877;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;125.306;126.073;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;132.681;133.306;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;143.734;144.806;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;146.841;147.448;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;150.341;151.484;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;168.115;169.115;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;167.198;175.288;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;176.252;200.681;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;202.163;203.466;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;208.02;211.681;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;213.931;233.627;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;237.163;238.163;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;241.002;280.931;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;288.163;352.752;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;356.877;358.814;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;360.877;362.323;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;362.377;363.413;Unprotected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;367.145;378.234;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;385.145;406.913;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;408.234;467.591;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;472.913;474.234;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;482.716;498.895;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;511.856;512.94;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;522.377;523.919;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;525.252;527.711;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;536.211;539.086;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;541.877;602.315;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;602.315;603.04;Start/End;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;20.639;21.366;Unprotected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;58.903;59.628;Unprotected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;105.528;106.603;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;109.728;110.628;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;110.903;112.428;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_OS.json;Oliver;477.484;479.306;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;0.002;0.523;Start/End;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;3.765;5.057;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;7.296;8.076;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;12.678;14.19;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;21.743;22.67;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;26.06;26.729;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;27.163;27.69;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;28.464;29.405;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;50.655;51.949;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;53.743;55.964;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;56.104;56.752;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;57.949;58.669;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;61.589;62.317;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;62.773;64.002;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;64.31;65.185;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;75.565;75.94;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;77.736;78.457;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;88.106;88.627;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;92.758;96.067;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;99.854;101.883;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;105.302;106.934;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;107.626;108.948;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;111.001;112.392;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;119.002;119.731;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;136.002;136.836;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;137.023;137.877;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;144.398;145.295;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;150.348;151.814;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;152.404;153.525;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;157.065;158.404;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;159.928;161.202;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;169.378;190.328;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;207.852;211.019;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;212.519;213.628;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;214.952;216.485;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;216.985;218.519;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;226.066;226.753;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;233.585;234.628;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;237.335;239.435;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;245.66;246.41;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;250.869;253.619;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;260.66;262.778;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;264.669;266.019;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;273.453;306.228;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;313.069;316.852;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;321.619;322.852;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;323.887;324.906;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;325.983;326.368;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;329.202;335.635;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;336.521;337.752;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;338.619;340.285;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;343.703;345.628;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;348.478;349.878;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;354.719;356.735;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;358.852;360.619;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;365.602;367.802;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;381.67;383.864;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;385.086;387.002;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;394.864;395.878;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;402.198;403.448;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;407.203;408.128;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;420.128;421.078;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;423.528;424.078;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;427.978;428.878;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;430.281;432.059;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;445.838;446.755;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;447.421;448.364;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;449.213;450.63;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;453.255;455.309;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;466.463;467.713;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;469.908;470.986;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;477.658;479.002;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;480.689;482.627;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;493.689;496.283;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;519.713;533.046;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;534.088;541.505;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;544.463;547.13;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;549.838;550.88;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;558.046;558.463;Grooming;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;560.671;562.963;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;563.503;565.156;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;565.178;571.378;Protected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;578.206;579.356;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;583.156;584.156;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;593.656;594.506;Rearing;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;601.153;602.728;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;602.704;603.04;Start/End;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;115.207;116.751;Unprotected Stretch;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_11_adjusted_SD.json;Sian;377.619;379.285;Head Dip;EPM_11;EPM_11DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;22.779;23.779;_DEFAULT;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;23.461;23.94;Start/End;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;24.819;25.887;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;26.552;27.535;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;29.135;30.252;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;31.302;32.785;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;36.519;37.348;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;38.202;39.147;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;41.235;42.171;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;43.233;44.675;Unprotected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;56.352;57.502;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;60.273;61.119;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;59.541;60.31;Unprotected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;63.119;64.255;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;65.966;69.306;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;69.77;70.859;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;83.573;84.609;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;86.573;87.984;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;100.288;102.234;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;109.556;111.913;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;111.966;112.788;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;117.841;119.222;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;122.441;125.878;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;131.023;132.378;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;133.273;134.461;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;135.044;136.41;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;145.731;146.972;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;148.273;150.502;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;158.351;159.351;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;162.377;165.41;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;169.941;171.878;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;176.253;180.597;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;184.097;186.847;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;189.316;190.816;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;193.972;195.91;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;195.847;199.722;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;208.722;210.16;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;210.191;213.347;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;215.816;218.222;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;226.347;228.285;Rearing;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;232.878;235.816;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;236.535;237.972;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;250.785;253.191;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;269.378;270.503;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;272.128;276.878;Unprotected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;277.128;278.16;Unprotected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;295.887;297.944;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;282.065;283.544;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;286.878;287.597;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;288.211;290.044;Rearing;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;298.441;316.41;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;317.285;318.128;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;320.556;324.627;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;328.073;332.003;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;333.734;336.097;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;345.847;346.191;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;346.878;347.285;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;348.847;353.003;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;356.806;358.306;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;359.566;382.535;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;392.913;395.823;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;402.16;405.347;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;408.035;410.785;Rearing;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;426.378;427.472;Unprotected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;429.504;430.218;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;432.347;433.41;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;433.816;435.147;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;435.785;436.785;Unprotected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;443.441;447.504;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;449.065;450.79;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;470.114;470.781;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;471.148;472.836;Rearing;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;473.392;473.725;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;475.281;475.67;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;480.711;486.781;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;491.648;496.106;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;500.448;501.531;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;501.803;504.586;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;505.781;506.614;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;507.853;510.975;Head Dip;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;511.836;513.725;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;522.67;524.753;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;527.003;558.253;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;561.448;596.836;Grooming;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;599.336;600.127;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;43.463;44.796;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;620.611;621.28;Start/End;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_13_adjusted_SD.json;Sian;151.294;152.877;Protected Stretch;EPM_13;EPM_13DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;0.023;0.648;Start/End;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;5.69;6.898;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;7.627;8.836;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;8.94;9.877;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;11.877;12.94;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;14.231;15.606;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;17.19;17.752;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;18.211;19.169;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;22.586;23.627;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;27.048;28.044;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;30.252;31.252;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;31.919;33.627;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;38.606;40.502;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;43.19;44.502;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;46.31;47.598;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;48.002;48.597;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;52.12;52.894;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;54.168;56.454;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;57.192;59.549;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;59.716;61.156;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;61.347;62.608;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;63.263;64.537;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;68.751;69.882;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;70.216;71.716;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;71.906;72.478;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;79.487;80.12;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;81.085;81.394;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;82.751;83.704;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;90.216;91.335;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;97.668;98.87;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;100.406;100.93;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;102.442;102.835;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;102.431;102.87;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;100.347;100.966;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;81.068;81.406;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;90.183;91.347;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;104.132;105.144;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;112.013;113.335;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;118.275;130.168;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;134.056;136.708;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;141.219;142.414;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;143.403;143.838;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;144.208;144.643;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;145.512;146.066;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;149.066;151.36;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;151.773;153.566;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;155.077;157.566;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;157.849;159.088;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;161.936;163.664;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;165.969;168.523;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;172.251;175.338;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;175.208;177.045;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;179.382;180.969;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;181.273;183.11;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;183.382;184.545;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;185.338;186.045;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;190.729;192.729;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;195.86;196.371;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;200.186;200.675;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;205.229;205.773;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;214.697;215.121;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;217.371;219.262;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;220.143;223.708;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;224.816;228.556;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;229.316;230.306;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;230.914;233.251;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;233.773;234.925;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;235.762;237.893;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;244.208;246.273;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;246.469;249.99;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;255.653;256.849;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;259.74;262.382;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;263.393;265.61;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;266.871;267.284;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;268.751;269.414;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;272.958;273.599;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;273.903;274.806;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;276.186;276.762;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;277.012;278.349;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;279.59;280.59;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;278.838;279.534;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;282.297;288.604;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;289.433;291.251;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;292.388;295.422;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;297.183;300.354;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;304.717;308.206;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;310.91;312.422;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;317.479;321.319;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;313.365;315.967;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;323.489;323.977;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;325.501;325.942;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;326.037;327.156;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;328.228;329.275;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;335.37;341.311;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;342.942;345.918;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;347.62;350.085;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;350.68;353.656;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;362.738;364.804;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;365.107;365.751;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;368.37;370.528;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;372.554;373.554;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;372.936;374.949;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;375.133;376.844;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;380.344;380.896;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;380.949;382.12;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;383.041;383.501;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;383.863;384.863;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;386.488;387.883;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;388.159;389.541;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;390.01;391.01;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;389.515;389.988;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;391.33;418.815;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;419.981;450.899;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;451.502;452.722;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;455.296;458.281;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;459.075;461.399;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;461.972;462.296;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;466.575;471.428;Protected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;474.59;476.458;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;476.487;477.031;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;479.678;481.428;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;490.619;492.149;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;498.134;499.619;Rearing;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;502.487;503.634;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;517.06;519.384;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;524.663;529.031;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;532.105;537.384;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;537.943;540.605;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;542.016;545.81;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;549.252;551.855;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;559.458;562.825;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;567.105;569.546;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;569.84;573.119;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;575.399;578.869;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;590.943;591.605;Grooming;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;597.443;599.649;Unprotected Stretch;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;600.134;603.178;Head Dip;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;600.877;601.877;Start/End;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_16_SD.json;Sian;602.472;603.2;Start/End;EPM_16;EPM_16DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;38.336;39.273;Start/End;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;45.086;45.981;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;46.794;47.273;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;47.544;48.127;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;51.169;51.794;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;52.294;52.961;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;54.752;55.19;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;55.877;56.294;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;58.233;59.848;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;63.368;63.906;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;65.618;66.233;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;70.435;71.052;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;72.269;73.019;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;73.352;74.152;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;76.552;77.635;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;78.685;79.285;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;74.419;75.152;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;79.552;80.335;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;89.27;96.234;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;98.198;99.431;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;99.746;100.746;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;99.502;99.859;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;100.106;100.94;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;102.481;103.273;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;106.898;107.294;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;107.752;108.336;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;110.093;111.321;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;106.898;107.294;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;126.553;128.178;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;128.628;129.353;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;134.191;137.191;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;134.19;137.253;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;138.956;139.706;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;139.757;141.882;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;142.757;143.757;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;143.882;145.132;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;147.194;148.007;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;148.382;149.194;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;150.254;165.806;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;166.506;170.356;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;178.706;180.229;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;121.662;122.48;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;184.593;185.116;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;188.162;188.73;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;190.866;191.798;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;198.253;199.491;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;196.912;198.321;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;198.548;200.48;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;200.798;202.775;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;203.73;206.957;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;208.316;211.66;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;214.639;215.525;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;221.093;222.503;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;222.548;223.275;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;224.303;226.528;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;225.303;227.475;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;226.42;259.356;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;265.553;266.306;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;269.853;271.053;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;271.028;306.671;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;307.796;309.671;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;307.713;309.796;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;310.88;312.963;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;314.588;332.676;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;336.319;339.319;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;337.069;338.694;Head Dip;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;338.882;339.694;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;340.548;343.093;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;343.116;343.843;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;346.593;413.176;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;417.619;418.619;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;416.253;417.628;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;431.237;432.237;Rearing;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;430.378;431.097;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;438.285;476.056;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;479.506;502.606;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;507.356;510.056;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;511.856;514.756;Protected Stretch;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;517.856;548.256;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;554.806;555.356;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;556.856;601.906;Grooming;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_2_SD.json;Sian;601.505;603.04;Start/End;EPM_2;EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;18.106;18.252;Start/End;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;19.211;19.943;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;20.355;21.413;Unprotected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;21.546;23.178;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;27.722;29.855;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;31.81;32.781;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;33.472;34.031;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;34.297;35.112;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;38.038;39.01;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;45.918;46.52;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;47.131;48.779;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;50.418;51.075;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;54.51;55.64;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;56.473;57.631;Unprotected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;57.807;58.492;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;58.779;59.621;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;63.77;64.242;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;65.51;66.001;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;69.307;70.668;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;71.473;72.547;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;72.908;73.464;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;82.131;82.816;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;83.871;84.344;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;88.473;88.992;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;92.584;93.658;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;93.779;94.695;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;94.908;95.955;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;105.501;106.455;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;120.964;121.779;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;125.195;126.029;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;130.01;130.983;Unprotected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;132.617;133.206;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;140.309;141.296;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;143.974;144.778;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;146.822;147.474;Unprotected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;150.367;151.456;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;162.715;163.376;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;165.671;166.68;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;146.668;176.588;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;166.725;174.823;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;176.198;200.734;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;202.22;203.408;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;204.533;205.97;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;207.939;211.174;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;214.392;233.361;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;235.158;236.236;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;237.095;238.158;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;239.877;240.908;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;241.236;281.025;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;288.275;352.507;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;356.819;358.075;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;360.857;362.068;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;361.994;363.472;Unprotected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;367.729;377.819;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;384.865;406.463;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;408.213;467.63;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;471.343;472.139;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;472.932;474.154;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;476.127;477.002;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;477.585;479.21;Protected Stretch;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;483.113;498.182;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;511.724;513.002;Rearing;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;516.668;517.279;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;522.474;523.863;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;525.238;527.599;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;536.404;539.071;Head Dip;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;542.066;602.41;Grooming;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
+EPM_6_SD.json;Sian;602.41;603.04;Start/End;EPM_6;EPM_6DeepCut_resnet50_epmMay17shuffle1_1030000.csv
