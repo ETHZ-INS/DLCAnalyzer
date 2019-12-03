@@ -1,4 +1,4 @@
-setwd("P:/Oliver/DLC PAPER/PIPELINE FINAL/FST")
+setwd("P:/Lukas/GitHubRepositories/DLCAnalyzer-master/data/FST/")
 
 library(sp)
 library(imputeTS)
@@ -69,7 +69,7 @@ for(j in files){
 } 
 
 
-write.table(Full_Report,paste(output_folder,"Results_explorative14.csv", sep = ""), sep = ";", row.names = F)
+write.table(Full_Report,paste(output_folder,"Results.csv", sep = ""), sep = ";", row.names = F)
 
 pdf(paste(output_folder,"BodyCenterDensity_final.pdf",sep = ""), height = 10, width = 12)
 for(j in PlotsBC){
