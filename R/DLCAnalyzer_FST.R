@@ -13,7 +13,7 @@ output_folder <- "Results/"
 maxspeed <- 20                  #maximum pixels a point can move in 1 frame before being removed
 likelyhood_cutoff <- 0.95
 diameter_toptobottom <- 20
-swim_cutoff <- 14              #numeric value that is used to determine if an animals is floating or not. rates the average change of bodyarea (in px^2)/frame over time
+swim_cutoff <- 15              #numeric value that is used to determine if an animals is floating or not. rates the average change of bodyarea (in px^2)/frame over time
 speed_cutoff <- 5
 cut_start <- 300
 cut_end <- 100
