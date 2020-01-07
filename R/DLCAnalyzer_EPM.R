@@ -1,4 +1,4 @@
-setwd("P:/Lukas/Analysis/DLC paper 2019 Datapipeline/DLC paper 2019 Datapipeline final 20191202/EPM/")
+setwd("P:/Lukas/GitHubRepositories/DLCAnalyzer-master/data/EPM/")
 
 library(sp)
 library(imputeTS)
@@ -9,7 +9,7 @@ library(data.table)
 speed_cutoff <- 5             #cutoff in cm/s ,above which an animal is considered moving
 likelyhood_cutoff <- 0.95       #DLC likelyhood below which points are removed and insted imputed
 scale_existence <- 1.8
-arena_size <- 42*42             #size of the y-maze in cm x cm
+arena_size <- 65.5*65.5             #size of the y-maze in cm x cm
 integration_window <- 5         #number of frames (+-) over which certain scorings are averages
 fps <- 25                       #frames per second of the video
 input_folder <- "Output_DLC/"      #folder in which all CSV input files are
