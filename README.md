@@ -1,11 +1,15 @@
----
-title: "Readme for DLCAnalyser"
-output:
-  html_document:
-    keep_md: true
-    theme: united
-    toc: yes
----
+- [DLCAnalyser](#dlcanalyser)
+- [Getting started](#getting-started)
+- [Loading and processing a single file](#loading-and-processing-a-single-file)
+- [OFT analysis on a single file](#oft-analysis-on-a-single-file)
+- [OFT analysis for multiple files](#oft-analysis-for-multiple-files)
+- [EPM analysis for a single file](#epm-analysis-for-a-single-file)
+- [EPM analysis for mutliple files](#epm-analysis-for-mutliple-files)
+- [FST analysis for one file](#fst-analysis-for-one-file)
+- [FST analysis for multiple files](#fst-analysis-for-multiple-files)
+- [Runing a bin analysis](#runing-a-bin-analysis)
+- [Training a machine learning classifier on a single file](#training-a-machine-learning-classifier-on-a-single-file)
+- [Training a robust classifier and cross validating it](#training-a-robust-classifier-and-cross-validating-it)
 
 
 
