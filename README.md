@@ -22,7 +22,7 @@ DLCAnalyser is a package that allows loading and processing of DLC .csv files. I
 
 ## Getting started
 
-This collection of code is not available as package, since certain dependencies rely on installs that are independent of R, so in order to ensure smooth operation please follow the steps described here.
+This collection of code is not available as package, since certain dependencies rely on installs that are independent of R, so in order to ensure smooth operation please follow the steps described here. This package contains code in form of an R script and all data that was used for the publication in the folder data/. In order to use DLCAnalyser with your own data you do not need the data/ folder that is fairly large!
 Following libraries are used by this package (with information about tested versions) and should be installed and loaded before executing any commands
 
 ```r
