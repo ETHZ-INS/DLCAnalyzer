@@ -42,7 +42,7 @@ While this package might be a bit harder to install it is only required for func
 
 
 ## Loading and processing a single file
-Download the contents of this repository and keep the folder structure unchanged. First, set your working directory to this specified folder and then ensure that the file with all the code gets sourced
+Download the contents of this repository and keep the folder structure unchanged (you do not need to download the /data subfolder though). First, set your working directory to this specified folder and then ensure that the file with all the code gets sourced
 
 
 
