@@ -1,4 +1,4 @@
-- [DLCAnalyser](#dlcanalyser)
+- [DLCAnalyzer](#dlcanalyzer)
 - [Getting started](#getting-started)
 - [Loading and processing a single file](#loading-and-processing-a-single-file)
 - [OFT analysis on a single file](#oft-analysis-on-a-single-file)
@@ -13,12 +13,12 @@
 
 
 
-## DLCAnalyser
+## DLCAnalyzer
 
 This collection of code is an extension to the following pre-print publication:
 https://www.biorxiv.org/content/10.1101/2020.01.21.913624v1
 
-DLCAnalyser is a package that allows loading and processing of DLC .csv files. It can be used for simple analyses such as zone visits, distance moved etc but can also be integrated with supervised machine learning and unsupervised clustering methods to extract complex behaviors based on point data information.
+DLCAnalyzer is a package that allows loading and processing of DLC .csv files. It can be used for simple analyses such as zone visits, distance moved etc but can also be integrated with supervised machine learning and unsupervised clustering methods to extract complex behaviors based on point data information.
 
 ## Getting started
 
