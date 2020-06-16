@@ -41,7 +41,7 @@ library(corrplot)   #tested with v0.84
 library(keras)      #REQUIRES TENSORFLOW INSTALL. tested with v2.2.5.0
 ```
 
-Additionally, this package requires a working installation of tensorflow for R, which itselfe requires a working installation of Anaconda. please follow the installation protocol in the following link for all steps:
+Additionally, this package requires a working installation of tensorflow for R, which itself requires a working installation of Anaconda. please follow the installation protocol in the following link for all steps:
 https://tensorflow.rstudio.com/installation/
 While this package might be a bit harder to install it is only required for functions that are needed for machine learning. For each section of this document it will be indicated when tensorflow is required. Everything else works without the install.
 
