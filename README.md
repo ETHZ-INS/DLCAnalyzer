@@ -17,6 +17,7 @@
 
 This collection of code is an extension to the following pre-print publication:
 https://www.biorxiv.org/content/10.1101/2020.01.21.913624v1
+
 DLCAnalyser is a package that allows loading and processing of DLC .csv files. It can be used for simple analyses such as zone visits, distance moved etc but can also be integrated with supervised machine learning and unsupervised clustering methods to extract complex behaviors based on point data information.
 
 ## Getting started
