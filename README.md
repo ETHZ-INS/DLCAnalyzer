@@ -1,15 +1,12 @@
-- [DLCAnalyser](#dlcanalyser)
-- [Getting started](#getting-started)
-- [Loading and processing a single file](#loading-and-processing-a-single-file)
-- [OFT analysis on a single file](#oft-analysis-on-a-single-file)
-- [OFT analysis for multiple files](#oft-analysis-for-multiple-files)
-- [EPM analysis for a single file](#epm-analysis-for-a-single-file)
-- [EPM analysis for mutliple files](#epm-analysis-for-mutliple-files)
-- [FST analysis for one file](#fst-analysis-for-one-file)
-- [FST analysis for multiple files](#fst-analysis-for-multiple-files)
-- [Runing a bin analysis](#runing-a-bin-analysis)
-- [Training a machine learning classifier (neural network): introduction](#training-a-machine-learning-classifier--neural-network---introduction)
-- [Training a robust classifier and cross validating it](#training-a-robust-classifier-and-cross-validating-it)
+---
+title: "Readme for DLCAnalyser"
+output:
+  html_document:
+    keep_md: true
+    theme: united
+    toc: yes
+---
+
 
 
 ## DLCAnalyser
@@ -45,13 +42,13 @@ Download the contents of this repository and keep the folder structure unchanged
 
 ```r
 setwd("PathToDLCFolder")
-source('DLCAnalyzer_Functions_final.R')
+source('R/DLCAnalyzer_Functions_final.R')
 ```
 
 to load a DLC .csv file (here an example file of an open field test (OFT) tracking) insert the path of the file (from the working directory):
 
 ```r
-Tracking <- ReadDLCDataFromCSV(file = "data/OFT/DLC_Data/3_01_A_190507121945DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv", fps = 25)
+Tracking <- ReadDLCDataFromCSV(file = "example/OFT/DLC_Data/OFT_3.csv", fps = 25)
 ```
 
 This command loads the DLCdata and orders it in an object that allows easy access and manipulation. it is crucial to set the correct frames per second (fps), otherwise many down stream metric will be distorted. if you do not set fps it will be set to 1 frame per second!
@@ -154,7 +151,7 @@ lets start by loading and pre-processing the data:
 
 
 ```r
-Tracking <- ReadDLCDataFromCSV(file = "data/OFT/DLC_Data/3_01_A_190507121945DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv", fps = 25)
+Tracking <- ReadDLCDataFromCSV(file = "example/OFT/DLC_Data/OFT_3.csv", fps = 25)
 Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
 Tracking <- CutTrackingData(Tracking,start = 100, end = 250)
 Tracking <- CalibrateTrackingData(Tracking, method = "area",in.metric = 42*42, points = c("tl","tr","br","bl"))
@@ -357,21 +354,13 @@ First we define the path to our folder of interest and find the files.
 
 
 ```r
-input_folder <- "data/OFT/DLC_Data/"
+input_folder <- "example/OFT/DLC_Data/"
 files <- list.files(input_folder) 
 files
 ```
 
 ```
-## [1] "1_01_A_190507114629DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv"
-## [2] "2_01_A_190507120240DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv"
-## [3] "3_01_A_190507121945DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv"
-## [4] "4_01_A_190507123718DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv"
-## [5] "5_01_A_190507125512DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv"
-## [6] "6_01_A_190507131058DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv"
-## [7] "7_01_A_190507132652DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv"
-## [8] "8_01_A_190507134142DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv"
-## [9] "9_01_A_190507135719DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv"
+## [1] "OFT_1.csv" "OFT_2.csv" "OFT_3.csv" "OFT_4.csv"
 ```
 
 Now, we define our processing pipeline. In order to check if it is runing appropriatley it is advisable to first run it for a single file interactively
@@ -400,7 +389,7 @@ From the list we can access individual results with the $ operator. for example 
 
 
 ```r
-Tracking <- TrackingAll$`1_01_A_190507114629DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv`
+Tracking <- TrackingAll$`OFT_1.csv`
 PlotZoneVisits(Tracking, point = "bodycentre")
 ```
 
@@ -415,36 +404,16 @@ Report[,1:6]
 ```
 
 ```
-##                                                                       file
-## 1 1_01_A_190507114629DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv
-## 2 2_01_A_190507120240DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv
-## 3 3_01_A_190507121945DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv
-## 4 4_01_A_190507123718DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv
-## 5 5_01_A_190507125512DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv
-## 6 6_01_A_190507131058DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv
-## 7 7_01_A_190507132652DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv
-## 8 8_01_A_190507134142DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv
-## 9 9_01_A_190507135719DeepCut_resnet50_Blockcourse1May9shuffle1_1030000.csv
-##   bodycentre.raw.distance bodycentre.distance.moving bodycentre.raw.speed
-## 1                3673.864                   2633.114             6.192879
-## 2                3908.624                   2965.331             6.591272
-## 3                3992.621                   3065.385             6.720679
-## 4                3817.537                   2799.329             6.435064
-## 5                4283.849                   3310.127             7.218186
-## 6                3441.940                   2451.236             5.798417
-## 7                4221.855                   3323.048             7.113728
-## 8                3795.942                   2766.730             6.394781
-## 9                4446.836                   3499.127             7.489282
-##   bodycentre.speed.moving bodycentre.time.moving
-## 1                11.80981                 222.96
-## 2                11.02354                 269.00
-## 3                12.21464                 250.96
-## 4                12.41277                 225.52
-## 5                13.14168                 251.88
-## 6                11.89690                 206.04
-## 7                11.84772                 280.48
-## 8                11.18503                 247.36
-## 9                12.75564                 274.32
+##        file bodycentre.raw.distance bodycentre.distance.moving
+## 1 OFT_1.csv                3673.864                   2633.114
+## 2 OFT_2.csv                3908.624                   2965.331
+## 3 OFT_3.csv                3992.621                   3065.385
+## 4 OFT_4.csv                3817.537                   2799.329
+##   bodycentre.raw.speed bodycentre.speed.moving bodycentre.time.moving
+## 1             6.192879                11.80981                 222.96
+## 2             6.591272                11.02354                 269.00
+## 3             6.720679                12.21464                 250.96
+## 4             6.435064                12.41277                 225.52
 ```
 
 Additionally, we can create PDF files with multiplots for all analyses. They will appear in the working directory.
@@ -462,7 +431,7 @@ similar as in previous sections, we start by loading and cleaning up our data
 
 
 ```r
-Tracking <- ReadDLCDataFromCSV(file = "data/EPM/DLC_Data/EPM_1DeepCut_resnet50_epmMay17shuffle1_1030000.csv", fps = 25)
+Tracking <- ReadDLCDataFromCSV(file = "example/EPM/DLC_Data/EPM_1.csv", fps = 25)
 names(Tracking$data)
 ```
 
@@ -498,7 +467,7 @@ First, we load the template .csv file
 
 
 ```r
-zoneinfo <- read.table("data/EPM/EPM_zoneinfo.csv", sep = ";", header = T)
+zoneinfo <- read.table("example/EPM/EPM_zoneinfo.csv", sep = ";", header = T)
 zoneinfo
 ```
 
@@ -556,23 +525,6 @@ We can use this to further clean up our data. we scale it by a factor 1.8 to def
 
 ```r
 inclusion.zone <- ScalePolygon(Tracking$zones$arena, 1.8)
-inclusion.zone
-```
-
-```
-##             x         y
-## 1   53.026964 -13.82542
-## 2   62.117785 -13.65095
-## 3   61.138361  39.47297
-## 4  120.058434  41.59409
-## 5  119.969642  51.03391
-## 6   60.473200  49.36589
-## 7   57.902817 103.97372
-## 8   48.859932 103.54912
-## 9   49.566814  48.78892
-## 10  -7.563734  47.50806
-## 11  -7.090901  38.25525
-## 12  49.661290  39.34811
 ```
 
 Now we can use this zone to further clean up our data. every point that falls outside of it will be removed and interpolated
@@ -598,22 +550,17 @@ We can now perform an EPM analysis. This will record time in zones and many othe
 
 ```r
 Tracking <- EPMAnalysis(Tracking, movement_cutoff = 5,integration_period = 5,points = "bodycentre", nosedips = TRUE)
-t(data.frame(Tracking$Report))[1:12,]
+t(data.frame(Tracking$Report[1:6]))
 ```
 
 ```
-##                          nose.dip           bodycentre.raw.distance 
-##                         33.000000                       1768.007995 
-##        bodycentre.distance.moving              bodycentre.raw.speed 
-##                        898.767567                          2.880055 
-##           bodycentre.speed.moving            bodycentre.time.moving 
-##                          9.182341                         97.880000 
-##             bodycentre.total.time        bodycentre.time.stationary 
-##                        613.880000                        516.000000 
-##      bodycentre.percentage.moving    bodycentre.center.raw.distance 
-##                         15.944484                        345.517131 
-## bodycentre.center.distance.moving       bodycentre.center.raw.speed 
-##                        128.647973                          3.266993
+##                                   [,1]
+## nose.dip                     33.000000
+## bodycentre.raw.distance    1768.007995
+## bodycentre.distance.moving  898.767567
+## bodycentre.raw.speed          2.880055
+## bodycentre.speed.moving       9.182341
+## bodycentre.time.moving       97.880000
 ```
 
 We can create a time resolved plot of all nose dips. for this we use:
@@ -632,16 +579,13 @@ Similar to multiple OFT files, we first define a pipeline and then execute it fo
 
 
 ```r
-input_folder <- "data/EPM/DLC_Data/"
+input_folder <- "example/EPM/DLC_Data/"
 files <- list.files(input_folder) 
 files
 ```
 
 ```
-## [1] "EPM_1DeepCut_resnet50_epmMay17shuffle1_1030000.csv"
-## [2] "EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv"
-## [3] "EPM_3DeepCut_resnet50_epmMay17shuffle1_1030000.csv"
-## [4] "EPM_4DeepCut_resnet50_epmMay17shuffle1_1030000.csv"
+## [1] "EPM_1.csv" "EPM_2.csv" "EPM_3.csv" "EPM_4.csv"
 ```
 
 
@@ -651,7 +595,7 @@ pipeline <- function(path){
   Tracking <- ReadDLCDataFromCSV(file = path, fps = 25)
   Tracking <- CutTrackingData(Tracking,start = 100, end = 250)
   Tracking <- CalibrateTrackingData(Tracking, method = "distance",in.metric = 65.5, points = c("tl","br"))
-  zoneinfo <- read.table("data/EPM/EPM_zoneinfo.csv", sep = ";", header = T)
+  zoneinfo <- read.table("example/EPM/EPM_zoneinfo.csv", sep = ";", header = T)
   Tracking <- AddZones(Tracking,zoneinfo)
   Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95,existence.pol = ScalePolygon(Tracking$zones$arena, 1.8))
   Tracking <- EPMAnalysis(Tracking, movement_cutoff = 5,integration_period = 5,points = "bodycentre", nosedips = TRUE)
@@ -670,29 +614,24 @@ Report[,1:6]
 ```
 
 ```
-##                                                 file nose.dip
-## 1 EPM_1DeepCut_resnet50_epmMay17shuffle1_1030000.csv       33
-## 2 EPM_2DeepCut_resnet50_epmMay17shuffle1_1030000.csv       17
-## 3 EPM_3DeepCut_resnet50_epmMay17shuffle1_1030000.csv        1
-## 4 EPM_4DeepCut_resnet50_epmMay17shuffle1_1030000.csv       58
-##   bodycentre.raw.distance bodycentre.distance.moving bodycentre.raw.speed
-## 1               1768.0080                  898.76757             2.880055
-## 2               2027.8865                  941.75085             3.442931
-## 3                578.6794                   56.44209             0.944012
-## 4               2886.3323                 1591.10968             4.773322
-##   bodycentre.speed.moving
-## 1                9.182341
-## 2               10.935333
-## 3                6.849769
-## 4               10.949007
+##        file nose.dip bodycentre.raw.distance bodycentre.distance.moving
+## 1 EPM_1.csv       33               1768.0080                  898.76757
+## 2 EPM_2.csv       17               2027.8865                  941.75085
+## 3 EPM_3.csv        1                578.6794                   56.44209
+## 4 EPM_4.csv       58               2886.3323                 1591.10968
+##   bodycentre.raw.speed bodycentre.speed.moving
+## 1             2.880055                9.182341
+## 2             3.442931               10.935333
+## 3             0.944012                6.849769
+## 4             4.773322               10.949007
 ```
 
 We can see that animal 3 has very few nosedips, whereas animal 4 seems to have a lot. We can quickly compare both with the following commands to create overviewplots for them.
 
 
 ```r
-OverviewPlot(TrackingAll$EPM_4DeepCut_resnet50_epmMay17shuffle1_1030000.csv,"bodycentre")
-OverviewPlot(TrackingAll$EPM_3DeepCut_resnet50_epmMay17shuffle1_1030000.csv,"bodycentre")
+OverviewPlot(TrackingAll$EPM_4.csv,"bodycentre")
+OverviewPlot(TrackingAll$EPM_3.csv,"bodycentre")
 ```
 
 <img src="README_figs/README-figures-side-1.png" width="50%" /><img src="README_figs/README-figures-side-2.png" width="50%" />
@@ -715,7 +654,7 @@ Similar to previous sections, we start by loading and cleaning up our data
 
 
 ```r
-Tracking <- ReadDLCDataFromCSV(file = "data/FST/DLC_Data/FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv", fps = 25)
+Tracking <- ReadDLCDataFromCSV(file = "example/FST/DLC_Data/FST_1.csv", fps = 25)
 Tracking <- CutTrackingData(Tracking,start = 300, end = 100)
 Tracking <- CalibrateTrackingData(Tracking, "distance",in.metric = 20, points = c("t","b"))
 Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
@@ -763,7 +702,7 @@ We can see that there is not yet any info that describes which point belongs to 
 
 
 ```r
-pointinfo <- read.table("data/FST/FST_pointinfo.csv", sep = ";", header = T)
+pointinfo <- read.table("example/FST/FST_pointinfo.csv", sep = ";", header = T)
 Tracking <- AddPointInfo(Tracking, pointinfo)
 Tracking$point.info
 ```
@@ -835,17 +774,13 @@ Similar to multiple OFT files, we first set the path, define a pipeline and then
 
 
 ```r
-input_folder <- "data/FST/DLC_Data/"
+input_folder <- "example/FST/DLC_Data/"
 files <- list.files(input_folder) 
 files[1:5]
 ```
 
 ```
-## [1] "FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv" 
-## [2] "FST_10_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv"
-## [3] "FST_11_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv"
-## [4] "FST_12_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv"
-## [5] "FST_13_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv"
+## [1] "FST_1.csv"  "FST_11.csv" "FST_16.csv" "FST_2.csv"  "FST_3.csv"
 ```
 
 We define the processing pipeline
@@ -857,7 +792,7 @@ pipeline <- function(path){
   Tracking <- CutTrackingData(Tracking,start = 300, end = 100)
   Tracking <- CalibrateTrackingData(Tracking, "distance",in.metric = 20, points = c("t","b"))
   Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
-  pointinfo <- read.table("data/FST/FST_pointinfo.csv", sep = ";", header = T)
+  pointinfo <- read.table("example/FST/FST_pointinfo.csv", sep = ";", header = T)
   Tracking <- AddPointInfo(Tracking, pointinfo)
   Tracking <- FSTAnalysis(Tracking,cutoff_floating = 0.03,integration_period = 10, Object = "Mouse", points = "bodycentre")
   return(Tracking)
@@ -878,18 +813,18 @@ Report[1:5,1:5]
 ```
 
 ```
-##                                                        file time.floating
-## 1  FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv         48.92
-## 2 FST_10_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv          0.28
-## 3 FST_11_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv         63.36
-## 4 FST_12_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv        120.80
-## 5 FST_13_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv         55.12
-##   total.time percentage.floating bodycentre.raw.distance
-## 1     359.04         13.62522282                2419.805
-## 2     357.40          0.07834359                3723.863
-## 3     359.56         17.62153743                1794.816
-## 4     356.60         33.87549075                1541.691
-## 5     353.56         15.58999887                2058.904
+##         file time.floating total.time percentage.floating
+## 1  FST_1.csv         48.92     359.04            13.62522
+## 2 FST_11.csv         63.36     359.56            17.62154
+## 3 FST_16.csv        107.40     361.20            29.73422
+## 4  FST_2.csv        127.92     372.16            34.37231
+## 5  FST_3.csv         99.48     356.84            27.87804
+##   bodycentre.raw.distance
+## 1                2419.805
+## 2                1794.816
+## 3                1732.207
+## 4                1674.447
+## 5                1533.503
 ```
 
 Additionally, we can create a PDF with all the label plots using the following command. by default it will be placed in your working directory
@@ -905,11 +840,11 @@ Often, in behavioral research readouts are required in time bins. DLC analyser h
 
 
 ```r
-Tracking <- ReadDLCDataFromCSV(file = "data/FST/DLC_Data/FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv", fps = 25)
+Tracking <- ReadDLCDataFromCSV(file = "example/FST/DLC_Data/FST_1.csv", fps = 25)
 Tracking <- CutTrackingData(Tracking,start = 300, end = 100)
 Tracking <- CalibrateTrackingData(Tracking, "distance",in.metric = 20, points = c("t","b"))
 Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
-pointinfo <- read.table("data/FST/FST_pointinfo.csv", sep = ";", header = T)
+pointinfo <- read.table("example/FST/FST_pointinfo.csv", sep = ";", header = T)
 Tracking <- AddPointInfo(Tracking, pointinfo)
 ```
 
@@ -935,7 +870,7 @@ Optional, you can also load bins from a data.frame. this is especially interesti
 
 
 ```r
-my.bins <- read.table("data/FST/FST_BinData.csv", sep = ";", header = T)
+my.bins <- read.table("example/FST/FST_BinData.csv", sep = ";", header = T)
 my.bins
 ```
 
@@ -979,7 +914,7 @@ We can do the same for multiple files (here again in our custom bins):
 
 
 ```r
-input_folder <- "data/FST/DLC_Data/"
+input_folder <- "example/FST/DLC_Data/"
 files <- list.files(input_folder) 
 
 pipeline <- function(path){
@@ -987,9 +922,9 @@ pipeline <- function(path){
   Tracking <- CutTrackingData(Tracking,start = 300, end = 100)
   Tracking <- CalibrateTrackingData(Tracking, "distance",in.metric = 20, points = c("t","b"))
   Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
-  pointinfo <- read.table("data/FST/FST_pointinfo.csv", sep = ";", header = T)
+  pointinfo <- read.table("example/FST/FST_pointinfo.csv", sep = ";", header = T)
   Tracking <- AddPointInfo(Tracking, pointinfo)
-  my.bins <- read.table("data/FST/FST_BinData.csv", sep = ";", header = T)
+  my.bins <- read.table("example/FST/FST_BinData.csv", sep = ";", header = T)
   Tracking <- AddBinData(Tracking,bindat = my.bins, unit = "minute")
   return(Tracking)
 }
@@ -1006,20 +941,13 @@ BinReportAll[1:6,1:5]
 ```
 
 ```
-##                                                        file bin
-## 1  FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv  B1
-## 2  FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv  B2
-## 3  FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv  B3
-## 4 FST_10_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv  B1
-## 5 FST_10_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv  B2
-## 6 FST_10_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv  B3
-##   time.floating total.time percentage.floating
-## 1          0.00      78.04           0.0000000
-## 2         26.12     180.04          14.5078871
-## 3         22.80      90.04          25.3220791
-## 4          0.00      78.04           0.0000000
-## 5          0.00     180.04           0.0000000
-## 6          0.28      90.04           0.3109729
+##         file bin time.floating total.time percentage.floating
+## 1  FST_1.csv  B1          0.00      78.04             0.00000
+## 2  FST_1.csv  B2         26.12     180.04            14.50789
+## 3  FST_1.csv  B3         22.80      90.04            25.32208
+## 4 FST_11.csv  B1          0.00      78.04             0.00000
+## 5 FST_11.csv  B2         27.36     180.04            15.19662
+## 6 FST_11.csv  B3         34.04      90.04            37.80542
 ```
 
 We can now answer our question if floating increases in the later parts of the tests:
@@ -1033,7 +961,7 @@ ggplot(data = BinReportAll, aes(bin,percentage.floating, color = bin)) + geom_bo
 
 As you can see here, the time floating seems to increase in the later bins compared to the earlier bin
 
-## Training a machine learning classifier (neural network): introduction
+## Training a machine learning classifier on a single file
 
 This section requires a working install of the keras library which itself requires a working anaconda and tensorflow install!
 Here we will explore how a neural network can be trained to recognize complex behaviors. We will work with the forced swim test data (FST).
@@ -1042,8 +970,8 @@ first, we will see how we can generate features from one single file and add the
 
 
 ```r
-file <- "FST_3_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv"
-path <- "data/FST/DLC_Data/"
+file <- "FST_3.csv"
+path <- "example/FST/DLC_Data/"
 Tracking <- ReadDLCDataFromCSV(paste(path,file,sep = ""), fps = 25)
 Tracking <- CutTrackingData(Tracking,start = 300,end = 300)
 Tracking <- CalibrateTrackingData(Tracking, "distance",in.metric = 20, c("t","b"))
@@ -1064,25 +992,18 @@ As we can see, the data looks good. Now, lets add the labeling data. For this, w
 
 
 ```r
-labeling.data <- read.table("data/FST/Lables/FSTLables_Oliver.csv",sep = ";", header = T)
+labeling.data <- read.table("example/FST/Lables/FSTLables_Oliver.csv",sep = ";", header = T)
 head(labeling.data)
 ```
 
 ```
-##            file Experimenter    from      to     type    ID
-## 1 FST_1_OS.json       Oliver 161.315 162.023 Floating FST_1
-## 2 FST_1_OS.json       Oliver 180.148 181.190 Floating FST_1
-## 3 FST_1_OS.json       Oliver 194.252 195.711 Floating FST_1
-## 4 FST_1_OS.json       Oliver 238.544 243.711 Floating FST_1
-## 5 FST_1_OS.json       Oliver 247.544 256.086 Floating FST_1
-## 6 FST_1_OS.json       Oliver 264.211 267.252 Floating FST_1
-##                                                    CSVname
-## 1 FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv
-## 2 FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv
-## 3 FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv
-## 4 FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv
-## 5 FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv
-## 6 FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv
+##            file Experimenter    from      to     type    ID   CSVname
+## 1 FST_1_OS.json       Oliver 161.315 162.023 Floating FST_1 FST_1.csv
+## 2 FST_1_OS.json       Oliver 180.148 181.190 Floating FST_1 FST_1.csv
+## 3 FST_1_OS.json       Oliver 194.252 195.711 Floating FST_1 FST_1.csv
+## 4 FST_1_OS.json       Oliver 238.544 243.711 Floating FST_1 FST_1.csv
+## 5 FST_1_OS.json       Oliver 247.544 256.086 Floating FST_1 FST_1.csv
+## 6 FST_1_OS.json       Oliver 264.211 267.252 Floating FST_1 FST_1.csv
 ```
 
 As you can see the data is prepared in a specific way that links onset and offset of behaviors to a specific file. To get the data from this one file and add it to our object we use:
@@ -1212,14 +1133,14 @@ As we can see, the classifier performes closely to the original manual tracking.
 
 ## Training a robust classifier and cross validating it
 
-In order to train a more robust classifiers we need more trainings data. Here we again use the FST dataset, for which we have 20 annotated videos. we start by defining our pipeline
+In order to train a more robust classifiers we need more trainings data. Here we again use the FST dataset, for which we have 5 annotated videos in this example. In general this amount of trainings data is not sufficient for a good performance, but it will serve as a practical example that can be run in a short enough time here. we start by defining our pipeline
 
 
 ```r
-labeling.data <- read.table("data/FST/Lables/FSTLables_Oliver.csv",sep = ";", header = T)
-pointinfo <- read.table("data/FST/FST_pointinfo.csv", sep = ";", header = T)
+labeling.data <- read.table("example/FST/Lables/FSTLables_Oliver.csv",sep = ";", header = T)
+pointinfo <- read.table("example/FST/FST_pointinfo.csv", sep = ";", header = T)
 files <- unique(labeling.data$CSVname)
-path <- "data/FST/DLC_Data/"
+path <- "example/FST/DLC_Data/"
 pipeline <- function(path){
   Tracking <- ReadDLCDataFromCSV(path, fps = 25)
   Tracking <- CutTrackingData(Tracking,start = 300,end = 300)
@@ -1288,40 +1209,69 @@ We quickly see how it performed for the first 2 files
 
 
 ```r
-PlotLabels(TrackingAll$FST_1_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv)
+PlotLabels(TrackingAll$FST_1.csv)
 ```
 
 ![](README_figs/README-unnamed-chunk-74-1.png)<!-- -->
 
 ```r
-PlotLabels(TrackingAll$FST_2_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv)
+PlotLabels(TrackingAll$FST_2.csv)
 ```
 
 ![](README_figs/README-unnamed-chunk-74-2.png)<!-- -->
 
 As we can see, on the first glance the classifications look fairly accurate. We can further compare them to each other by 
+We can evaluate our results within files and for the overall experiment. The second function will create a PDF document with all LabelPlots in the working directory.
 
 
 ```r
-t(LabelReport(TrackingAll$FST_2_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv))
+EvaluateClassification(TrackingAll)
 ```
 
 ```
-##      manual.None.time manual.None.count manual.Floating.time
-## [1,] 251.68           16                112.48              
-##      manual.Floating.count cutoff.floating.Floating.time
-## [1,] 16                    127.12                       
-##      cutoff.floating.Floating.count cutoff.floating.None.time
-## [1,] 96.5                           237.04                   
-##      cutoff.floating.None.count classifications.None.time
-## [1,] 96.5                       246.04                   
-##      classifications.None.count classifications.Floating.time
-## [1,] 29                         116.52                       
-##      classifications.Floating.count
-## [1,] 29
+## $files
+##          file    label  accuracy precision    recall correct wrong N_truth
+## 1   FST_1.csv     None 0.9222352 0.9931267 0.9174550    7080   597    7717
+## 2   FST_1.csv Floating 0.9537299 0.6285003 0.9537299    1010    49    1059
+## 3  FST_16.csv     None 0.9514778 0.9546464 0.9484796    6020   307    6347
+## 4  FST_16.csv Floating 0.8838814 0.8764090 0.8767620    2177   286    2483
+## 5   FST_3.csv     None 0.9796883 0.8371989 0.9762694    5595   116    5731
+## 6   FST_3.csv Floating 0.6336700 0.9419419 0.6294314    1882  1088    2990
+## 7  FST_11.csv     None 0.9818325 0.8952751 0.9768941    6215   115    6362
+## 8  FST_11.csv Floating 0.6994626 0.9363586 0.6971570    1692   727    2427
+## 9   FST_2.csv Floating 0.9477240 0.8058663 0.9477240    2665   147    2812
+## 10  FST_2.csv     None 0.8973129 0.9744659 0.8916084    5610   642    6292
+##    N_compare
+## 1       7129
+## 2       1607
+## 3       6306
+## 4       2484
+## 5       6683
+## 6       1998
+## 7       6942
+## 8       1807
+## 9       3307
+## 10      5757
+## 
+## $overall
+##             label  accuracy precision    recall correct wrong N_truth
+## correct      None 0.9449794 0.9300058 0.9405529   30520  1777   32449
+## correct1 Floating 0.8040604 0.8413818 0.8007816    9426  2297   11771
+##          N_compare
+## correct      32817
+## correct1     11203
 ```
 
-We can create a correlation matrix for multiple files and selected labels with:
+```r
+PlotLabels.Multi.PDF(TrackingAll)
+```
+
+```
+## NULL
+```
+
+as we can see, for floating we achieve an overall accuracy of ~80% and for None ~94%
+If we want to investigate how well the classifier imitate the human experimenter across multiple files we can create a correlation plot of the final readouts. Here we are interested in the floating time for the different Labeling approaches:
 
 
 ```r
@@ -1330,13 +1280,14 @@ CorrelationPlotLabels(TrackingAll, include = c("manual.Floating.time","classific
 
 ![](README_figs/README-unnamed-chunk-76-1.png)<!-- -->
 
-As we can see the classifier performs comparable to the preset cutoff, where it finds a good agreement for most manualy labeled files. We can additionally perform a kmeans clustering on all data to see how well unsupervised clustering can resolve the floating behavior.
+As we can see, training with 4 files only leads to a classifier that correlates worse to the manual scoring than the pre-set cutoff. To increase the correlation we would want to increase the size of trainings data substantially.
 
+DLCAnalyzer can also run unsupervised clusterin methods. Here we use kmeans clustering on our machine learning data to see if this approach can resolve any behavioral syllables that are floating like.
 
 
 ```r
 TrackingAll <- UnsupervisedClusteringKmeans(TrackingAll,N_clusters = 10,Z_score_Normalize = TRUE)
-PlotLabels(TrackingAll$FST_2_cropDeepCut_resnet50_FST1Aug15shuffle1_1030000.csv)
+PlotLabels(TrackingAll$FST_2.csv)
 ```
 
 ![](README_figs/README-unnamed-chunk-77-1.png)<!-- -->

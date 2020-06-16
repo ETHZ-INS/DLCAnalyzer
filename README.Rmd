@@ -1,0 +1,752 @@
+---
+title: "Readme for DLCAnalyser"
+output:
+  html_document:
+    keep_md: true
+    theme: united
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+  fig.path = "README_figs/README-"
+)
+```
+
+## DLCAnalyser
+
+DLCAnalyser is a package that allows loading and processing of DLC .csv files. It can be used for simple analyses such as zone visits, distance moved etc but can also be integrated with supervised machine learning and unsupervised clustering methods to extract complex behaviors based on point data information.
+
+## Getting started
+
+This collection of code is not available as package, since certain dependencies rely on installs that are independent of R, so in order to ensure smooth operation please follow the steps described here.
+Following libraries are used by this package (with information about tested versions) and should be installed and loaded before executing any commands
+```{r results='hide', message=FALSE, warning=FALSE}
+library(sp)         #tested with v1.3-2
+library(imputeTS)   #tested with v2.7
+library(ggplot2)    #tested with v3.1.0
+library(ggmap)      #tested with v3.0.0
+library(data.table) #tested with v1.12.8
+library(cowplot)    #tested with v0.9.4
+library(corrplot)   #tested with v0.84
+library(keras)      #REQUIRES TENSORFLOW INSTALL. tested with v2.2.5.0
+```
+
+Additionally, this package requires a working installation of tensorflow for R, which itselfe requires a working installation of Anaconda. please follow the installation protocol in the following link for all steps:
+https://tensorflow.rstudio.com/installation/
+While this package might be a bit harder to install it is only required for functions that are needed for machine learning. For each section of this document it will be indicated when tensorflow is required. Everything else works without the install.
+
+
+## Loading and processing a single file
+Download the contents of this repository and keep the folder structure unchanged. First, set your working directory to this specified folder and then ensure that the file with all the code gets sourced
+
+```{r, include=FALSE}
+source('R/DLCAnalyzer_Functions_final.R')
+```
+
+```{r, eval=FALSE}
+setwd("PathToDLCFolder")
+source('R/DLCAnalyzer_Functions_final.R')
+```
+
+to load a DLC .csv file (here an example file of an open field test (OFT) tracking) insert the path of the file (from the working directory):
+```{r}
+Tracking <- ReadDLCDataFromCSV(file = "example/OFT/DLC_Data/OFT_3.csv", fps = 25)
+```
+
+This command loads the DLCdata and orders it in an object that allows easy access and manipulation. it is crucial to set the correct frames per second (fps), otherwise many down stream metric will be distorted. if you do not set fps it will be set to 1 frame per second!
+lets inspect the contents of the tracking object
+
+```{r}
+names(Tracking$data)
+```
+
+as you can see the object contains a sub-object data that has multiple further sub-objects, one for each point. The points have the same name as they had in the DLC network that was used for point tracking. Since this depends heavily on each user most code of DLCAnalyser is compatible with custom point names. Wherever functions were written for our specific network we will indicate this in the documnet. 
+lets have a look at the point bodycentre
+
+```{r}
+head(Tracking$data$bodycentre)
+```
+
+as you can see the information from DLC (frame,x,y, and likelihoood) of point "bodycentre" can be accessed easily
+You can easily plot one or multiple points using:
+
+```{r}
+PlotPointData(Tracking, points = c("nose","bodycentre","tailbase","neck"))
+```
+
+as you can see the tracking was not perfect, and all points had some tracking problems every now and then. If we want to remove and interpolate the outliers based on low likelihood from DLC we can do this by
+
+```{r}
+Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
+PlotPointData(Tracking, points = c("nose","bodycentre","tailbase","neck"))
+```
+
+This looks already better, but there are still some points that were tracked incorrectly with high likelihood. When inspecting these OFT videos it becomes apparent that the video runs on after the trial is over which leads to mislabeling when the light in the camber turns on and the mouse is picked up. Lets get rid of the last 250 frames (=10 seconds) and see if this solves the issue
+
+```{r}
+Tracking <- CutTrackingData(Tracking, end = 250)
+PlotPointData(Tracking, points = c("nose","bodycentre","tailbase","neck"))
+```
+
+as you can see this removed the artefacts in the data sufficiently
+
+Next, we want to calibrate our Tracking data to transform it from a pixel dimension into a metric dimension. In this case we measured the physical distance of the area in cms (42 x 42) which is span by the points tl, tr, br and bl
+
+```{r}
+Tracking <- CalibrateTrackingData(Tracking, method = "area",in.metric = 42*42, points = c("tl","tr","br","bl"))
+Tracking$px.to.cm
+PlotPointData(Tracking, points = c("nose","bodycentre","tailbase","neck"))
+```
+
+As you can see now the px.to.cm ratio was calculated and the data was automatically transformed into a metric dimension. The same process is possible with a pre defined ratio or with a distance measurement between two points
+
+## OFT analysis on a single file
+
+Here we will explore how we can perform an OFT (open field test) analysis on a single file
+
+lets start by loading and pre-processing the data:
+
+```{r, results='hide'}
+Tracking <- ReadDLCDataFromCSV(file = "example/OFT/DLC_Data/OFT_3.csv", fps = 25)
+Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
+Tracking <- CutTrackingData(Tracking,start = 100, end = 250)
+Tracking <- CalibrateTrackingData(Tracking, method = "area",in.metric = 42*42, points = c("tl","tr","br","bl"))
+```
+
+In a OFT analysis we want quantify how much / fast an animal moves, how much time it spends in different zones and other metrics
+Lets start with creating the zones. DLCAnalyzer has a built in function to create a set of OFT zones based on tracking data from the 4 corners of the arena. 
+To create OFT zones use:
+
+```{r}
+Tracking <- AddOFTZones(Tracking, scale_center = 0.5,scale_periphery  = 0.8 ,scale_corners = 0.4, points = c("tl","tr","br","bl"))
+PlotZones(Tracking)
+```
+
+As you can see the function created the OFT Zones and stored them as part of the Tracking object.
+Now we can resolve whenever a body point is in a certain zone 
+
+```{r}
+PlotZoneVisits(Tracking,point = c("bodycentre","nose","tailbase"))
+```
+
+However, we might be interested in adding new zones independent of any method. If we would want to add 2 new triangular zones and only get a readout for them we could do:
+
+```{r}
+Tracking <- AddZones(Tracking,z = data.frame(my.zone.1 = c("tl","tr","centre"),
+                                             my.zone.2 = c("bl","br","centre")))
+PlotZones(Tracking, zones=c("my.zone.1","my.zone.2", "arena"))
+PlotZoneVisits(Tracking,point = c("bodycentre","nose","tailbase"),zones = c("my.zone.1","my.zone.2"))
+```
+
+In order to get metrics such as speed or movement we use
+
+```{r}
+Tracking <- CalculateMovement(Tracking, movement_cutoff = 5, integration_period = 5)
+head(Tracking$data$bodycentre)
+```
+
+the movement cutoff defines at which cutoff (units / s, here cm) we are considering something moving. the integration_period is important for transitions. It will define over how many frames (+- period) transitions between zones are analysed and for how long an animal has to be moving to be considered so. This can help to remove noisy interpretations, i.e. where a point jumps over the zone line multiple times in short succession.
+
+Now that we have calculated all metrics which are important for our analysis we can create a density plot that encapsulates speed, time spent and position for points
+
+```{r}
+plots <- PlotDensityPaths(Tracking,points = c("bodycentre","nose","tailbase"))
+plots$bodycentre
+plots$nose
+```
+
+We can add our zones to the plot
+
+```{r}
+plots <- AddZonesToPlots(plots,Tracking$zones)
+plots$bodycentre
+```
+
+We are interested what happens in the center over the whole recording. For this we can generate a zone report
+
+```{r}
+Report <- ZoneReport(Tracking, point = "bodycentre", zones = "center")
+t(data.frame(Report))
+```
+
+we can also generate a report based on a combination of zones. the following example we create a report for whenever the bodycentre is neither in my.zone.1 or in my.zone.2 (we look at the inversion of a combined zone)
+
+```{r}
+Report <- ZoneReport(Tracking, point = "bodycentre", zones = c("my.zone.1","my.zone.2"), zone.name = "OutsideMyZones", invert = TRUE)
+t(data.frame(Report))
+```
+
+Now we get a report for what happens when the animal is not in my.zone.1 or my.zone.2. if we want to check if our zone was set correctly we can quickly do this with:
+
+```{r}
+PlotZoneSelection(Tracking, point = "bodycentre", zones = c("my.zone.1","my.zone.2"), invert = TRUE)
+```
+
+For an easy preset OFT analysis of one or multiple points you can also use the command:
+
+```{r, warning=FALSE}
+Tracking <- OFTAnalysis(Tracking, points = "bodycentre" ,movement_cutoff = 5, integration_period = 5)
+t(data.frame(Tracking$Report))
+```
+
+## OFT analysis for multiple files
+
+in order to run multiple files the best practice is to first define a pipeline of commands, and then execute it for all files in a folder.
+First we define the path to our folder of interest and find the files.
+
+```{r, warning=FALSE}
+input_folder <- "example/OFT/DLC_Data/"
+files <- list.files(input_folder) 
+files
+```
+
+Now, we define our processing pipeline. In order to check if it is runing appropriatley it is advisable to first run it for a single file interactively
+
+```{r, warning=FALSE}
+pipeline <- function(path){
+  Tracking <- ReadDLCDataFromCSV(path, fps = 25)
+  Tracking <- CutTrackingData(Tracking,start = 100, end = 300)
+  Tracking <- CalibrateTrackingData(Tracking, "area",in.metric = 42*42, points = c("tr","tl","bl","br"))
+  Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
+  Tracking <- AddOFTZones(Tracking, scale_center = 0.5,scale_periphery  = 0.8 ,scale_corners = 0.4)
+  Tracking <- OFTAnalysis(Tracking, movement_cutoff = 5, integration_period = 5, points = "bodycentre")
+  return(Tracking)
+}
+```
+
+Now that the pipeline is defined we can execute it for all files and combine them into a list of Tracking objects
+
+```{r, results='hide', message=FALSE, warning=FALSE}
+TrackingAll <- RunPipeline(files,input_folder,FUN = pipeline)
+```
+
+From the list we can access individual results with the $ operator. for example if we want to plot the zone visits for the first file we can simply use:
+
+```{r}
+Tracking <- TrackingAll$`OFT_1.csv`
+PlotZoneVisits(Tracking, point = "bodycentre")
+```
+
+To get a combined report of all files we can use the following command. (here we only display the first 6 columns)
+
+```{r}
+Report <- MultiFileReport(TrackingAll)
+Report[,1:6]
+```
+
+Additionally, we can create PDF files with multiplots for all analyses. They will appear in the working directory.
+
+```{r, eval=FALSE}
+PlotDensityPaths.Multi.PDF(TrackingAll,points = c("bodycentre"), add_zones = TRUE)
+PlotZoneVisits.Multi.PDF(TrackingAll,points = c("bodycentre","nose","tailbase"))
+```
+
+## EPM analysis for a single file
+
+Here we will describe how a EPM (elevated plus maze) analysis for a single file can be performed using DLCAnalyser
+similar as in previous sections, we start by loading and cleaning up our data
+
+```{r}
+Tracking <- ReadDLCDataFromCSV(file = "example/EPM/DLC_Data/EPM_1.csv", fps = 25)
+names(Tracking$data)
+```
+
+As you we see, the EPM network contains additional/different points than the OFT network. Many of these additional points are used to track the maze which allows automatic reconstruction of the zones for each file.
+
+```{r}
+Tracking <- CutTrackingData(Tracking,start = 100, end = 250)
+Tracking <- CalibrateTrackingData(Tracking, method = "distance",in.metric = 65.5, points = c("tl","br"))
+Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
+PlotPointData(Tracking,points = c("nose","bodycentre","tailbase","neck"))
+```
+
+As we can see, the data looks messy even after the likelihood cutoff. We will get back to that with a further trick. However, for the EPM analysis we also need a number of zones that describe the maze (open arms, closed arms etc.). Rather than constructing them in all independently there is the option to use a template file that describes the zones and add them to the object automatically.
+First, we load the template .csv file
+
+```{r}
+zoneinfo <- read.table("example/EPM/EPM_zoneinfo.csv", sep = ";", header = T)
+zoneinfo
+```
+
+As we can see this file simply contains a number of columns that each contain a list or point names from our DLCnetwork. Each column of points describes a zone which they span. We can add this info to the Tracking data
+
+```{r}
+Tracking <- AddZones(Tracking,zoneinfo)
+PlotZones(Tracking)
+```
+
+Our zone file also contains one zone that describes the whole area
+
+```{r}
+Tracking$zones$arena
+```
+
+We can use this to further clean up our data. we scale it by a factor 1.8 to define an inclusion zone
+
+```{r}
+inclusion.zone <- ScalePolygon(Tracking$zones$arena, 1.8)
+```
+
+Now we can use this zone to further clean up our data. every point that falls outside of it will be removed and interpolated
+
+```{r}
+Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95,existence.pol = inclusion.zone)
+PlotPointData(Tracking,points = c("nose","bodycentre","tailbase","neck"))
+```
+
+We can now perform an EPM analysis. This will record time in zones and many other metrics. if nosedips is enabled it will automatically detect nose dips. This will only works if the correctly named points and zones are present in the DLCnetwork and zoneinfo file, otherwise it will omit the nosedip analysis and report a warning.
+
+```{r}
+Tracking <- EPMAnalysis(Tracking, movement_cutoff = 5,integration_period = 5,points = "bodycentre", nosedips = TRUE)
+t(data.frame(Tracking$Report[1:6]))
+```
+
+We can create a time resolved plot of all nose dips. for this we use:
+
+```{r}
+PlotLabels(Tracking)
+```
+
+## EPM analysis for mutliple files
+
+Here we will cover an EPM (elevated plus maze) analysis for multiple files.
+Similar to multiple OFT files, we first define a pipeline and then execute it for all EPM files
+
+```{r, warning=FALSE}
+input_folder <- "example/EPM/DLC_Data/"
+files <- list.files(input_folder) 
+files
+```
+
+
+```{r, warning=FALSE,results='hide'}
+pipeline <- function(path){
+  Tracking <- ReadDLCDataFromCSV(file = path, fps = 25)
+  Tracking <- CutTrackingData(Tracking,start = 100, end = 250)
+  Tracking <- CalibrateTrackingData(Tracking, method = "distance",in.metric = 65.5, points = c("tl","br"))
+  zoneinfo <- read.table("example/EPM/EPM_zoneinfo.csv", sep = ";", header = T)
+  Tracking <- AddZones(Tracking,zoneinfo)
+  Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95,existence.pol = ScalePolygon(Tracking$zones$arena, 1.8))
+  Tracking <- EPMAnalysis(Tracking, movement_cutoff = 5,integration_period = 5,points = "bodycentre", nosedips = TRUE)
+  return(Tracking)
+}
+
+TrackingAll <- RunPipeline(files,input_folder,FUN = pipeline)
+```
+
+Again, we can create a report for all files using the following command (here we only show the first 6 columns)
+
+```{r, warning=FALSE,}
+Report <- MultiFileReport(TrackingAll)
+Report[,1:6]
+```
+
+We can see that animal 3 has very few nosedips, whereas animal 4 seems to have a lot. We can quickly compare both with the following commands to create overviewplots for them.
+
+```{r, fig.asp = 1.5, figures-side, fig.show="hold", out.width="50%"}
+OverviewPlot(TrackingAll$EPM_4.csv,"bodycentre")
+OverviewPlot(TrackingAll$EPM_3.csv,"bodycentre")
+```
+
+Indeed, it becomes apparent that animal 3 was hiding in the bottom closed arm for most of the test, whereas animal 4 showed a rich explorative behavior
+
+Additionally, we can create PDF files with multiplots for all analyses. They will appear in your working directory.
+
+```{r, eval=FALSE}
+PlotDensityPaths.Multi.PDF(TrackingAll,points = c("bodycentre"), add_zones = TRUE)
+PlotZoneVisits.Multi.PDF(TrackingAll,points = c("bodycentre","nose","tailbase"))
+PlotLabels.Multi.PDF(TrackingAll)
+```
+
+## FST analysis for one file
+
+Here we will describe how a FST (forced swim test) analysis for a single file can be performed
+Similar to previous sections, we start by loading and cleaning up our data
+
+```{r,results='hide'}
+Tracking <- ReadDLCDataFromCSV(file = "example/FST/DLC_Data/FST_1.csv", fps = 25)
+Tracking <- CutTrackingData(Tracking,start = 300, end = 100)
+Tracking <- CalibrateTrackingData(Tracking, "distance",in.metric = 20, points = c("t","b"))
+Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
+```
+
+And we inspect our data to controll the integrity
+
+```{r}
+PlotPointData(Tracking,points = c("nose","bodycentre","tailbase","neck"))
+```
+
+As we can see the data looks good already. we can now proceed to run the analysis. But first, for an FST analysis we need to specify further information. For this type of analysis we have to measure the movement of all points that are part of the mouse and analyse them in order to detect floating behavior.
+If we inspect the pointinfo of our object
+
+```{r}
+Tracking$point.info
+```
+
+We can see that there is not yet any info that describes which point belongs to the mouse. Here we will load this info from a .csv file and add it to the object: (however, this could also be done manually by directly changing Tracking$point.info)
+
+```{r}
+pointinfo <- read.table("example/FST/FST_pointinfo.csv", sep = ";", header = T)
+Tracking <- AddPointInfo(Tracking, pointinfo)
+Tracking$point.info
+```
+
+Now that he Tracking info has the additional information about point type we can run an FST analysis. we specify a cutoff_floating of 0.03, for which we found it to track floating behavior optimally. We also specify that the object we want to track is of type "Mouse"
+
+```{r}
+Tracking <- FSTAnalysis(Tracking,cutoff_floating = 0.03,integration_period = 10, Object = "Mouse", points = "bodycentre")
+Tracking$Report
+PlotLabels(Tracking)
+```
+
+As we can see, in this case the floating behavior of the mouse increased in the later part of the swim test.
+
+## FST analysis for multiple files
+
+Here we will describe how multiple FST (forced swim test) files can be analyzed together.
+Similar to multiple OFT files, we first set the path, define a pipeline and then execute it for all FST files
+
+```{r, warning=FALSE}
+input_folder <- "example/FST/DLC_Data/"
+files <- list.files(input_folder) 
+files[1:5]
+```
+
+We define the processing pipeline
+
+```{r, warning=FALSE}
+pipeline <- function(path){
+  Tracking <- ReadDLCDataFromCSV(file = path, fps = 25)
+  Tracking <- CutTrackingData(Tracking,start = 300, end = 100)
+  Tracking <- CalibrateTrackingData(Tracking, "distance",in.metric = 20, points = c("t","b"))
+  Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
+  pointinfo <- read.table("example/FST/FST_pointinfo.csv", sep = ";", header = T)
+  Tracking <- AddPointInfo(Tracking, pointinfo)
+  Tracking <- FSTAnalysis(Tracking,cutoff_floating = 0.03,integration_period = 10, Object = "Mouse", points = "bodycentre")
+  return(Tracking)
+}
+```
+
+We execute the pipeline for all files and combine them into a list of Tracking objects. We can then get a final report:
+
+```{r, warning=FALSE,results='hide'}
+TrackingAll <- RunPipeline(files,input_folder,FUN = pipeline)
+Report <- MultiFileReport(TrackingAll)
+```
+
+```{r, warning=FALSE}
+Report[1:5,1:5]
+```
+
+Additionally, we can create a PDF with all the label plots using the following command. by default it will be placed in your working directory
+
+```{r, eval=FALSE}
+PlotLabels.Multi.PDF(TrackingAll)
+```
+
+## Runing a bin analysis
+
+Often, in behavioral research readouts are required in time bins. DLC analyser has a fully integrated approach that allows analyses within bins. Here, we will be doing a bin analysis for floating behavior to see if it increases in animals at later time-points.
+
+```{r, warning=FALSE, results='hide'}
+Tracking <- ReadDLCDataFromCSV(file = "example/FST/DLC_Data/FST_1.csv", fps = 25)
+Tracking <- CutTrackingData(Tracking,start = 300, end = 100)
+Tracking <- CalibrateTrackingData(Tracking, "distance",in.metric = 20, points = c("t","b"))
+Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
+pointinfo <- read.table("example/FST/FST_pointinfo.csv", sep = ";", header = T)
+Tracking <- AddPointInfo(Tracking, pointinfo)
+```
+
+We did not yet run any analysis, since first we need to add the informatino about the bins. Here we add 1 minute bins.
+
+```{r, warning=FALSE}
+Tracking <- AddBinData(Tracking,unit = "minute", binlength = 1)
+Tracking$bins
+```
+
+Optional, you can also load bins from a data.frame. this is especially interesting if you have unequal sized bins. In this example we have a first and last bin of 1.5 minutes and a longer intermediate bin of 3 minutes
+
+```{r, warning=FALSE}
+my.bins <- read.table("example/FST/FST_BinData.csv", sep = ";", header = T)
+my.bins
+Tracking <- AddBinData(Tracking,bindat = my.bins, unit = "minute")
+Tracking$bins
+```
+
+Now, we can perform a bin analysis using:
+
+```{r, warning=FALSE}
+BinReport <- BinAnalysis(Tracking, FUN = FSTAnalysis ,cutoff_floating = 0.03,integration_period = 10, Object = "Mouse", points = "bodycentre")
+BinReport[,1:5]
+```
+
+It is important to note that the function BinAnalysis() takes an other function as argument (FSTAnalysis). Therefore it is crucial to pass all the arguments the function FSTAnalysis() requires along whenever using BinAnalysis(), In this case these were: cutoff_floating, integration_period, Object and points. The same applies to other functions such as OFTAnalysis() or EPMAnalysis() for the respective tests, which are also compatible with the Mutltibinanalysis
+
+We can do the same for multiple files (here again in our custom bins):
+
+```{r, warning=FALSE, results='hide'}
+input_folder <- "example/FST/DLC_Data/"
+files <- list.files(input_folder) 
+
+pipeline <- function(path){
+  Tracking <- ReadDLCDataFromCSV(file = path, fps = 25)
+  Tracking <- CutTrackingData(Tracking,start = 300, end = 100)
+  Tracking <- CalibrateTrackingData(Tracking, "distance",in.metric = 20, points = c("t","b"))
+  Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
+  pointinfo <- read.table("example/FST/FST_pointinfo.csv", sep = ";", header = T)
+  Tracking <- AddPointInfo(Tracking, pointinfo)
+  my.bins <- read.table("example/FST/FST_BinData.csv", sep = ";", header = T)
+  Tracking <- AddBinData(Tracking,bindat = my.bins, unit = "minute")
+  return(Tracking)
+}
+
+TrackingAll <- RunPipeline(files,input_folder,FUN = pipeline)
+BinReportAll <- MultiFileBinanalysis(TrackingAll, FUN = FSTAnalysis ,cutoff_floating = 0.03,integration_period = 10, Object = "Mouse", points = "bodycentre")
+```
+
+And we can see that the bins for each file are now included in one data frame
+
+```{r, warning=FALSE}
+BinReportAll[1:6,1:5]
+```
+
+We can now answer our question if floating increases in the later parts of the tests:
+
+```{r, warning=FALSE}
+ggplot(data = BinReportAll, aes(bin,percentage.floating, color = bin)) + geom_boxplot() + geom_point(position = position_jitterdodge())
+```
+
+As you can see here, the time floating seems to increase in the later bins compared to the earlier bin
+
+## Training a machine learning classifier on a single file
+
+This section requires a working install of the keras library which itself requires a working anaconda and tensorflow install!
+Here we will explore how a neural network can be trained to recognize complex behaviors. We will work with the forced swim test data (FST).
+
+first, we will see how we can generate features from one single file and add the labeling data from a human experimenter to it. We start with our standard pipeline to load, clean and calibrate the data
+
+```{r, warning=FALSE}
+file <- "FST_3.csv"
+path <- "example/FST/DLC_Data/"
+Tracking <- ReadDLCDataFromCSV(paste(path,file,sep = ""), fps = 25)
+Tracking <- CutTrackingData(Tracking,start = 300,end = 300)
+Tracking <- CalibrateTrackingData(Tracking, "distance",in.metric = 20, c("t","b"))
+Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
+PlotPointData(Tracking,points = c("nose","bodycentre","tailbase","neck"))
+```
+
+As we can see, the data looks good. Now, lets add the labeling data. For this, we first load it from a file which containes labeling data of only one experimenter
+
+```{r, warning=FALSE}
+labeling.data <- read.table("example/FST/Lables/FSTLables_Oliver.csv",sep = ";", header = T)
+head(labeling.data)
+```
+
+As you can see the data is prepared in a specific way that links onset and offset of behaviors to a specific file. To get the data from this one file and add it to our object we use:
+
+```{r, warning=FALSE}
+labeling.data <- labeling.data[labeling.data$CSVname == Tracking$file,]
+Tracking <- AddLabelingData(Tracking, labeling.data)
+PlotLabels(Tracking)
+```
+
+Now that we have our labeling data, we have to think about how to create our feature data from our Tracking data. here we will use the information about point acceleration to train a floating classifier. For this, we first have to calculate accelerations for each of our point
+
+```{r, warning=FALSE}
+Tracking <- CalculateAccelerations(Tracking)
+```
+
+now we use a preset function that extracts our features from the point data and stitches them into a single feature data frame
+
+```{r, warning=FALSE}
+Tracking <- CreateAccelerationFeatures(Tracking)
+dim(Tracking$features)
+head(Tracking$features)
+```
+
+As you can see, our feature data now contains acceleration of 11 points, in this case all points except the tail points. It is important to note here, that the function CreateAccelerationFeatures() is very specific for a certain DLC network, so any network that produces different points, or points with different names will not work properly!
+Additionally, we also want to incorporate temporal information. For this we use the following command. In the process data from previous and following frames will be added to our features at each frame, depending on a specified integration period, here +- 20 frames.
+
+```{r, warning=FALSE}
+Tracking <- CreateTrainingSet(Tracking, integration_period = 20)
+dim(Tracking$train_x)
+head(Tracking$train_y)
+```
+
+As we can see, now the train_x data is much bigger, having 451 features (=41 x 11) that represent acceleration of 11 points over a window of +- 20 frames. We can now use the following command to prepare the data so it can directly be used with keras. We set shuffle to TRUE so the data gets randomly shuffled before training a network with it
+
+```{r, warning=FALSE, eval = FALSE}
+MLData <- CombineTrainingsData(Tracking, shuffle = TRUE)
+```
+
+Now, we define the architecture of the network that we want to train. We will not go into the details of the model used here, it is advisable to read the documentation on tensorflow.org for specific details.
+
+```{r, warning=FALSE, eval = FALSE}
+model <- keras_model_sequential() 
+model %>% 
+  layer_dense(units = 256, activation = 'relu', input_shape = c(MLData$parameters$N_input),kernel_regularizer = regularizer_l2(l = 0)) %>% 
+  layer_dropout(rate = 0.4) %>% 
+  layer_dense(units = 128, activation = 'relu',kernel_regularizer = regularizer_l2(l = 0)) %>%
+  layer_dropout(rate = 0.3) %>%
+  layer_dense(units = MLData$parameters$N_features, activation = 'softmax')
+
+model %>% compile(
+  loss = 'categorical_crossentropy',
+  optimizer = optimizer_rmsprop(),
+  metrics = c('accuracy')
+)
+```
+
+We train the model with our data using the following command
+
+```{r, warning=FALSE, eval = FALSE}
+history <- model %>% fit(
+  MLData$train_x, MLData$train_y, 
+  epochs = 5, batch_size = 32, 
+  validation_split = 0
+)
+```
+
+We can evaluate the model with the same data using the following function:
+
+```{r, include = FALSE}
+#Here we are reading in pre-processed labeling data. set eval to TRUE for the above chunks and disable this command to interactively run ML training
+Tracking$labels <- readRDS("example/knitdat.ML1.Rds")
+```
+```{r, warning=FALSE, eval = FALSE}
+Tracking <- ClassifyBehaviors(Tracking,model,MLData$parameters)
+```
+```{r}
+PlotLabels(Tracking)
+```
+
+As we can see, the classifier performes closely to the original manual tracking. However, here we have to be very carefull here. We just trained with the same data that we tested on, and we used data from one single video. The results here are not very solid. In the next section we will see how we can use a one vs all approach to create a new training data set using multiple labeled recordings and test them with a cross validation file
+
+## Training a robust classifier and cross validating it
+
+In order to train a more robust classifiers we need more trainings data. Here we again use the FST dataset, for which we have 5 annotated videos in this example. In general this amount of trainings data is not sufficient for a good performance, but it will serve as a practical example that can be run in a short enough time here. we start by defining our pipeline
+
+```{r, warning=FALSE}
+labeling.data <- read.table("example/FST/Lables/FSTLables_Oliver.csv",sep = ";", header = T)
+pointinfo <- read.table("example/FST/FST_pointinfo.csv", sep = ";", header = T)
+files <- unique(labeling.data$CSVname)
+path <- "example/FST/DLC_Data/"
+pipeline <- function(path){
+  Tracking <- ReadDLCDataFromCSV(path, fps = 25)
+  Tracking <- CutTrackingData(Tracking,start = 300,end = 300)
+  Tracking <- CalibrateTrackingData(Tracking, "distance",in.metric = 20, c("t","b"))
+  Tracking <- CleanTrackingData(Tracking, likelihoodcutoff = 0.95)
+  Tracking <- AddLabelingData(Tracking, labeling.data[labeling.data$CSVname == Tracking$filename,])
+  Tracking <- CalculateAccelerations(Tracking)
+  Tracking <- CreateAccelerationFeatures(Tracking)
+  Tracking <- CreateTrainingSet(Tracking, integration_period = 20)
+  Tracking <- AddPointInfo(Tracking,pointinfo)
+  Tracking <- FSTAnalysis(Tracking, cutoff_floating = 0.03, integration_period = 5, points = "bodycenter", Object = "Mouse")
+  return(Tracking)
+}
+
+```
+
+And now we run this pipeline for all files and save the results in a list of tracking objects
+
+```{r, warning=FALSE, results = 'hide'}
+TrackingAll <- RunPipeline(files,path,FUN = pipeline)
+```
+
+for the one vs all evaluation we write a loop that trains a model for each file (using all the other files as training data) and then evaluates this model with the not included data of this one file.
+
+```{r, warning=FALSE, results = 'hide', eval = FALSE}
+evaluation <- list()
+
+  for(i in names(TrackingAll)){
+    #combine training data from all files except the one we want to evaluate
+    MLData <- CombineTrainingsData(TrackingAll[names(TrackingAll) != i],shuffle = TRUE)
+    
+    #initialize model
+    model <- keras_model_sequential() 
+    model %>% 
+      layer_dense(units = 256, activation = 'relu', input_shape = c(MLData$parameters$N_input),kernel_regularizer = regularizer_l2(l = 0)) %>% 
+      layer_dropout(rate = 0.4) %>% 
+      layer_dense(units = 128, activation = 'relu',kernel_regularizer = regularizer_l2(l = 0)) %>%
+      layer_dropout(rate = 0.3) %>%
+      layer_dense(units = MLData$parameters$N_features, activation = 'softmax')
+
+    #define optimizer
+   model %>% compile(
+      loss = 'categorical_crossentropy',
+      optimizer = optimizer_rmsprop(),
+      metrics = c('accuracy')
+      )
+
+  #train model
+    history <- model %>% fit(
+      MLData$train_x, MLData$train_y, 
+      epochs = 5, batch_size = 32, 
+      validation_split = 0
+      )
+  
+  #we now use this model to classify the behavior in the cross validation file
+  TrackingAll[[i]] <- ClassifyBehaviors(TrackingAll[[i]],model,MLData$parameters)
+  
+  }
+```
+
+We quickly see how it performed for the first 2 files
+
+```{r, include = FALSE}
+#Here we are reading in pre-processed labeling data. set eval to TRUE for the above chunks and disable this command to interactively run ML training
+labs <- readRDS(file = "example/LabsFST.Rds")
+for(i in names(TrackingAll)){
+  TrackingAll[[i]]$labels$classifications <- labs[[i]]$classifications
+}
+
+```
+
+
+```{r}
+PlotLabels(TrackingAll$FST_1.csv)
+PlotLabels(TrackingAll$FST_2.csv)
+```
+
+As we can see, on the first glance the classifications look fairly accurate. We can further compare them to each other by 
+We can evaluate our results within files and for the overall experiment. The second function will create a PDF document with all LabelPlots in the working directory.
+
+```{r}
+EvaluateClassification(TrackingAll)
+PlotLabels.Multi.PDF(TrackingAll)
+```
+
+as we can see, for floating we achieve an overall accuracy of ~80% and for None ~94%
+If we want to investigate how well the classifier imitate the human experimenter across multiple files we can create a correlation plot of the final readouts. Here we are interested in the floating time for the different Labeling approaches:
+
+```{r}
+CorrelationPlotLabels(TrackingAll, include = c("manual.Floating.time","classifications.Floating.time","cutoff.floating.Floating.time"))
+```
+
+As we can see, training with 4 files only leads to a classifier that correlates worse to the manual scoring than the pre-set cutoff. To increase the correlation we would want to increase the size of trainings data substantially.
+
+DLCAnalyzer can also run unsupervised clusterin methods. Here we use kmeans clustering on our machine learning data to see if this approach can resolve any behavioral syllables that are floating like.
+
+```{r, results = 'hide', width=10, fig.height=8}
+TrackingAll <- UnsupervisedClusteringKmeans(TrackingAll,N_clusters = 10,Z_score_Normalize = TRUE)
+PlotLabels(TrackingAll$FST_2.csv)
+```
+
+As you can see there is one cluster that seems to be very similar to the classifier, manual and floating cutoff. Lets plot a correlation matrix to see if this holds over all files.
+
+```{r, fig.width=10, fig.height=8}
+CorrelationPlotLabels(TrackingAll, include = c("manual.Floating.time",
+                                               "classifications.Floating.time",
+                                               "cutoff.floating.Floating.time",
+                                               "unsupervised.1.time",
+                                               "unsupervised.2.time",
+                                               "unsupervised.3.time",
+                                               "unsupervised.4.time",
+                                               "unsupervised.5.time",
+                                               "unsupervised.6.time",
+                                               "unsupervised.7.time",
+                                               "unsupervised.8.time",
+                                               "unsupervised.9.time",
+                                               "unsupervised.10.time"))
+```

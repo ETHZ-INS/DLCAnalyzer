@@ -1,0 +1,13 @@
+arena;closed.top;closed.bottom;open.left;open.right;center
+tl;tl;cbr;lt;rt;ctr
+tr;tr;br;ctl;rb;ctl
+ctr;ctr;bl;cbl;cbr;cbl
+rt;ctl;cbl;lb;ctr;cbr
+rb;;;;;
+cbr;;;;;
+br;;;;;
+bl;;;;;
+cbl;;;;;
+lb;;;;;
+lt;;;;;
+ctl;;;;;
