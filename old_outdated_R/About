@@ -1,0 +1,4 @@
+This folder contains old scripts that were used for many of the original analyses for the publication. 
+These scripts have to be run independently for different types of analyses and only work with a very specific input format
+The only reason to keep them here is as a record.
+It is not recommended to use these scripts since they are much more cumbersome to work with and yield less flexibility than the new version
