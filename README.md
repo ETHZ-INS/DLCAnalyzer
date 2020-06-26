@@ -16,7 +16,7 @@
 
 ## DLCAnalyzer
 
-DLCAnalyzer is a code collection that allows loading and processing of DLC .csv files. It can be used for simple analyses such as zone visits, distance moved etc. but can also be integrated with supervised machine learning and unsupervised clustering methods to extract complex behaviors based on point data information. DLCAnalyzer is intended for interactive use in R. The following document will highlight the most common type of analyses that can be performed with this collection of functions. In the function glossary all main functions and auxiliary functions are listed with a short description of their action.
+DLCAnalyzer is a code collection that allows loading and processing of deep lab cut (DLC) .csv files (https://github.com/DeepLabCut/DeepLabCut). It can be used for simple analyses such as zone visits, distance moved etc. but can also be integrated with supervised machine learning and unsupervised clustering methods to extract complex behaviors based on point data information. DLCAnalyzer is intended for interactive use in R. The following document will highlight the most common type of analyses that can be performed with this collection of functions. In the function glossary all main functions and auxiliary functions are listed with a short description of their action.
 
 ## Getting started
 
