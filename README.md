@@ -72,7 +72,7 @@ names(Tracking$data)
 ## [16] "tailbase"   "tailcentre" "tailtip"
 ```
 
-As we can see the object contains a sub-object '$data' that has multiple further sub-objects, one for each point. The points have the same name as they had in the DLC network that was used for point tracking. Since this depends heavily on each user, most code of DLCAnalyzer is compatible with custom point names. Wherever functions were written for our specific network we will indicate this in the document 
+As we can see the object contains a sub-object `$data` that has multiple further sub-objects, one for each point. The points have the same name as they had in the DLC network that was used for point tracking. Since this depends heavily on each user, most code of DLCAnalyzer is compatible with custom point names. Wherever functions were written for our specific network we will indicate this in the document 
 Let's have a look at the point `bodycentre`:
 
 
