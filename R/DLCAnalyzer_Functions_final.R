@@ -33,7 +33,7 @@ ReadDLCDataFromCSV <- function(file,fps = 1){
   out$labels <- list()
   out$filename <- last(strsplit(file,split = "/")[[1]])
   out$object.type = "TrackingData"
-
+  
   return(out)
 }
 
@@ -66,7 +66,13 @@ AddPointInfo <- function(t,pointinfo){
   
   return(out)
 }
- 
+
+#' Checks if object is of type TrackingData
+#' 
+#' @param t an object of type TrackingData
+#' @return a boolean
+#' @examples
+#' IsTrackingData(Tracking)
 IsTrackingData <- function(t){
   if(!is.null(t$object.type)){
     if(t$object.type == "TrackingData"){
@@ -116,7 +122,7 @@ CutTrackingData <- function(t,start = NULL, end = NULL, remove.frames = NULL, ke
   if(!is.null(t$features)){
     t$features <- t$features[keep + 1,]
   }
-    
+  
   for(i in 1:length(t$data)){
     t$data[[i]] <- t$data[[i]][t$data[[i]]$frame %in% keep,]
   }
@@ -144,7 +150,7 @@ CleanTrackingData <- function(t, likelihoodcutoff = 0.95, existence.pol = NULL, 
     print("interpolating points which are outside of the existence area")
   }
   if(!is.null(maxdelta)){
-  print(paste("interpolating points with a maximum delta of", maxdelta, t$distance.units,"per frame", sep = " "))
+    print(paste("interpolating points with a maximum delta of", maxdelta, t$distance.units,"per frame", sep = " "))
   }
   
   for(i in 1:length(t$data)){
@@ -155,7 +161,7 @@ CleanTrackingData <- function(t, likelihoodcutoff = 0.95, existence.pol = NULL, 
       }else if(length(existence.pol$x) != length(existence.pol$y)){
         warning("invalid polygon entered. polygon data needs to include variable x and variable y of equal length")
       }else{
-      process <- process | !point.in.polygon(t$data[[i]]$x,t$data[[i]]$y,existence.pol$x, existence.pol$y)
+        process <- process | !point.in.polygon(t$data[[i]]$x,t$data[[i]]$y,existence.pol$x, existence.pol$y)
       }
     }
     if(!is.null(maxdelta)){
@@ -163,33 +169,8 @@ CleanTrackingData <- function(t, likelihoodcutoff = 0.95, existence.pol = NULL, 
     }
     t$data[[i]]$x[process] <- NA
     t$data[[i]]$y[process] <- NA
-    t$data[[i]] <- na.interpolation(t$data[[i]])
+    t$data[[i]] <- na_interpolation(t$data[[i]])
   }
-  return(t)
-}
-
-#' Adds an object median.data to a TrackingData object
-#' 
-#' @param t an object of type TrackingData
-#' @param TypeName points of this TypeName are considered maze data. Requires existence of point information (See AddPointInfo() )
-#' @return An object of type TrackingData
-#' @examples
-#' AddMazeData(t)
-#' AddMazeData(t, TypeName = "SomeOtherMaze")
-AddMazeData <- function(t,TypeName = "Maze"){
-  if(!IsTrackingData(t)){
-    stop("Object is not of type TrackingData")
-  }
-  if(!sum(t$point.info$PointType == TypeName)){
-    warning(paste("Point type", TypeName,"does not exist. No maze data added", sep = " "))
-    return(t)
-  }
-  t$median.data <- NULL
-  for(i in t$point.info[t$point.info$PointType == TypeName,"PointName"]){
-    t$median.data <- rbind(t$median.data, data.frame(PointName = i, x = median(t$data[[i]]$x), y = median(t$data[[i]]$y)))
-  }
-  rownames(t$median.data) <- t$median.data$PointName
-  t$has.median.data <- TRUE
   return(t)
 }
 
@@ -213,7 +194,7 @@ CalibrateTrackingData <- function(t, method, in.metric = NULL, points = NULL, ra
   }
   if(method == "ratio"){
     if(is.numeric(ratio)){
-    t$px.to.cm <- ratio
+      t$px.to.cm <- ratio
     }else{
       warning("method ratio needs a valid ratio to be entered. can not calibrate")
       return(t)
@@ -227,7 +208,7 @@ CalibrateTrackingData <- function(t, method, in.metric = NULL, points = NULL, ra
       warning("invalid points entered, can not calibrate")
       return(t)
     }
-
+    
     if(method == "distance"){
       if(length(points) == 2){
         t$px.to.cm <- in.metric / Distance2d(t$median.data[points[1],],t$median.data[points[2],]) 
@@ -262,7 +243,7 @@ CalibrateTrackingData <- function(t, method, in.metric = NULL, points = NULL, ra
   if(!is.null(new.units)){
     t$distance.units <- new.units
   }else{
-  t$distance.units <- "cm"
+    t$distance.units <- "cm"
   }
   
   return(t)
@@ -342,7 +323,7 @@ AddOFTZones <- function(t, points = c("tl","tr","br","bl"), scale_center = 0.5, 
 #' @param points a string or vector of strings that denotes the name of points which will be analysed
 #' @return a TrackingData object
 #' @examples
-#' OFTAnalysis(t, 5,5,"bodycentre")
+#' OFTAnalysis(t, movement_cutoff = 5,integration_period = 5,points = "bodycentre")
 OFTAnalysis <- function(t, movement_cutoff,integration_period, points){
   if(!IsTrackingData(t)){
     stop("Object is not of type TrackingData")
@@ -374,7 +355,7 @@ OFTAnalysis <- function(t, movement_cutoff,integration_period, points){
       t$Report <- append(t$Report, ZoneReport(t,k,"periphery" , zone.name = paste(k,"periphery", sep = "."), invert = TRUE))
       t$Report <- append(t$Report, ZoneReport(t,k,t$corner.names, zone.name = paste(k,"corners", sep = ".")))
     }
-    }
+  }
   return(t)
 }
 
@@ -403,9 +384,9 @@ EPMAnalysis <- function(t, movement_cutoff,integration_period, points,nosedips =
     if((length(setdiff(c("headcentre","bodycentre","neck"),names(t$data))) != 0) | (length(setdiff(c("closed.top","closed.bottom","arena"),names(t$zones))) != 0)){
       warning("Not all points or zones needed for nosedip analysis. Requires points : headcentre,bodycentre,neck and zones closed.top, closed.bottom, arena")
     }else{
-    t$labels$automatic.nosedip <- avgbool(!IsInZone(t,"headcentre","arena") & IsInZone(t,"bodycentre","arena") &!IsInZone(t,"neck",c("closed.top","closed.bottom")),integration_period)
-    t$Report[["nose.dip"]] <- CalculateTransitions(t$labels$automatic.nosedip,integration_period) / 2
-    t$labels$automatic.nosedip <- ifelse(t$labels$automatic.nosedip == 1,"Nosedip","None")
+      t$labels$automatic.nosedip <- avgbool(!IsInZone(t,"headcentre","arena") & IsInZone(t,"bodycentre","arena") &!IsInZone(t,"neck",c("closed.top","closed.bottom")),integration_period)
+      t$Report[["nose.dip"]] <- CalculateTransitions(t$labels$automatic.nosedip,integration_period) / 2
+      t$labels$automatic.nosedip <- ifelse(t$labels$automatic.nosedip == 1,"Nosedip","None")
     }
   }
   
@@ -482,8 +463,8 @@ LabelReport <- function(t, integration_period = 0){
   }
   Report <- list()
   for(j in names(t$labels)){
-  c <- SmoothLabel(t$labels[[j]],integration_period)
-  c <- na.omit(c)
+    c <- SmoothLabel(t$labels[[j]],integration_period)
+    c <- na.omit(c)
     for(i in unique(c)){
       Report[[paste(j,i,"time", sep = ".")]] <- sum(c == i) / t$fps
       Report[[paste(j,i,"count", sep = ".")]] <- sum(CalculateTransitions(c == i, 0)) / 2
@@ -554,7 +535,7 @@ ZoneReport <- function(t,point,zones, zone.name = NULL, invert = FALSE){
   Report[[paste(zone.name, "time.stationary", sep = ".")]] <- Report[[paste(zone.name, "total.time", sep = ".")]] - Report[[paste(zone.name, "time.moving", sep = ".")]]
   Report[[paste(zone.name, "percentage.moving", sep = ".")]] <- Report[[paste(zone.name, "time.moving", sep = ".")]] / Report[[paste(zone.name, "total.time", sep = ".")]] * 100
   Report[[paste(zone.name, "transitions", sep = ".")]] <- CalculateTransitions(in.zone, t$integration_period) 
-
+  
   return(Report)
 }
 
@@ -637,7 +618,36 @@ AddLabelingData <- function(t, lab){
   }
   return(t)
 }
- 
+
+CreateSkeletonData <- function(t){
+  if(!IsTrackingData(t)){
+    stop("Object is not of type TrackingData")
+  }
+  dat <- data.frame(S1 = GetDistances(t,"nose","headcentre"))
+  dat$S2 <- GetDistances(t,"headcentre","neck")
+  dat$S3 <- GetDistances(t,"neck","bodycentre")
+  dat$S4 <- GetDistances(t,"bodycentre","bcr")
+  dat$S5 <- GetDistances(t,"bodycentre","bcl")
+  dat$S6 <- GetDistances(t,"bodycentre","tailbase")
+  dat$S7 <- GetDistances(t,"tailbase","hipr")
+  dat$S8 <- GetDistances(t,"tailbase","hipl")
+  dat$S9 <- GetDistances(t,"tailbase","tailcentre")
+  dat$S10 <- GetDistances(t,"tailcentre","tailtip")
+  dat$A1 <- GetAngleTotal(t,"tailbase","tailcentre","tailcentre","tailtip")
+  dat$A2 <- GetAngleTotal(t,"hipr","tailbase","tailbase","hipl")
+  dat$A3 <- GetAngleTotal(t,"tailbase","bodycentre","bodycentre","neck")
+  dat$A4 <- GetAngleTotal(t,"bcr","bodycentre","bodycentre","bcl")
+  dat$A5 <- GetAngleTotal(t,"bodycentre","neck","neck","headcentre")
+  dat$A6 <- GetAngleTotal(t,"tailbase","bodycentre","neck","headcentre")
+  dat$Ar1 <- GetPolygonAreas(t,c("tailbase","hipr","hipl"))
+  dat$Ar2 <- GetPolygonAreas(t,c("hipr","hipl","bcl","bcr"))
+  dat$Ar3 <- GetPolygonAreas(t,c("bcr","earr","earl","bcl"))
+  dat$Ar4 <- GetPolygonAreas(t,c("earr","nose","earl"))
+  dat <- as.data.frame(dat) 
+  t$features <- dat
+  return(t)
+}
+
 CreateSkeletonData_OFT <- function(t){
   if(!IsTrackingData(t)){
     stop("Object is not of type TrackingData")
@@ -670,6 +680,93 @@ CreateSkeletonData_OFT <- function(t){
   return(t)
 }
 
+CreateSkeletonData_OFT_v2 <- function(t){
+  if(!IsTrackingData(t)){
+    stop("Object is not of type TrackingData")
+  }
+  dat <- data.frame(Ac1 = t$data[["nose"]]$acceleration)
+  dat$Ac2 <- t$data[["headcentre"]]$acceleration
+  dat$Ac3 <- t$data[["neck"]]$acceleration
+  dat$Ac4 <- t$data[["earr"]]$acceleration
+  dat$Ac5 <- t$data[["earl"]]$acceleration
+  dat$Ac6 <- t$data[["bodycentre"]]$acceleration
+  dat$Ac7 <- t$data[["bcl"]]$acceleration
+  dat$Ac8 <- t$data[["bcr"]]$acceleration
+  dat$Ac9 <- t$data[["hipl"]]$acceleration
+  dat$Ac10 <- t$data[["hipr"]]$acceleration
+  dat$Ac11 <- t$data[["tailbase"]]$acceleration
+  dat$S1 <- GetDistances(t,"nose","headcentre")
+  dat$S2 <- GetDistances(t,"headcentre","neck")
+  dat$S3 <- GetDistances(t,"neck","bodycentre")
+  dat$S4 <- GetDistances(t,"bodycentre","bcr")
+  dat$S5 <- GetDistances(t,"bodycentre","bcl")
+  dat$S6 <- GetDistances(t,"bodycentre","tailbase")
+  dat$S7 <- GetDistances(t,"tailbase","hipr")
+  dat$S8 <- GetDistances(t,"tailbase","hipl")
+  dat$S9 <- GetDistances(t,"tailbase","tailcentre")
+  dat$S10 <- GetDistances(t,"tailcentre","tailtip")
+  dat$A1 <- GetAngleTotal(t,"tailbase","tailcentre","tailcentre","tailtip")
+  dat$A2 <- GetAngleTotal(t,"hipr","tailbase","tailbase","hipl")
+  dat$A3 <- GetAngleTotal(t,"tailbase","bodycentre","bodycentre","neck")
+  dat$A4 <- GetAngleTotal(t,"bcr","bodycentre","bodycentre","bcl")
+  dat$A5 <- GetAngleTotal(t,"bodycentre","neck","neck","headcentre")
+  dat$A6 <- GetAngleTotal(t,"tailbase","bodycentre","neck","headcentre")
+  dat$Ar1 <- GetPolygonAreas(t,c("tailbase","hipr","hipl"))
+  dat$Ar2 <- GetPolygonAreas(t,c("hipr","hipl","bcl","bcr"))
+  dat$Ar3 <- GetPolygonAreas(t,c("bcr","earr","earl","bcl"))
+  dat$Ar4 <- GetPolygonAreas(t,c("earr","nose","earl"))
+  dat$P1 <- as.integer(IsInZone(t,"nose","arena"))
+  dat$P2 <- as.integer(IsInZone(t,"headcentre","arena"))
+  dat <- as.data.frame(dat) 
+  t$features <- dat
+  
+  return(t)
+}
+
+CreateSkeletonData_OFT_v3 <- function(t){
+  if(!IsTrackingData(t)){
+    stop("Object is not of type TrackingData")
+  }
+  dat <- data.frame(Ac1 = t$data[["nose"]]$acceleration)
+  dat$Ac2 <- t$data[["headcentre"]]$acceleration
+  dat$Ac3 <- t$data[["neck"]]$acceleration
+  dat$Ac4 <- t$data[["earr"]]$acceleration
+  dat$Ac5 <- t$data[["earl"]]$acceleration
+  dat$Ac6 <- t$data[["bodycentre"]]$acceleration
+  dat$Ac7 <- t$data[["bcl"]]$acceleration
+  dat$Ac8 <- t$data[["bcr"]]$acceleration
+  dat$Ac9 <- t$data[["hipl"]]$acceleration
+  dat$Ac10 <- t$data[["hipr"]]$acceleration
+  dat$Ac11 <- t$data[["tailbase"]]$acceleration
+  dat$S1 <- GetDistances(t,"nose","headcentre")
+  dat$S2 <- GetDistances(t,"headcentre","neck")
+  dat$S3 <- GetDistances(t,"neck","bodycentre")
+  dat$S4 <- GetDistances(t,"bodycentre","bcr")
+  dat$S5 <- GetDistances(t,"bodycentre","bcl")
+  dat$S6 <- GetDistances(t,"bodycentre","tailbase")
+  dat$S7 <- GetDistances(t,"tailbase","hipr")
+  dat$S8 <- GetDistances(t,"tailbase","hipl")
+  dat$S9 <- GetDistances(t,"tailbase","tailcentre")
+  dat$S10 <- GetDistances(t,"tailcentre","tailtip")
+  dat$A1 <- GetAngleTotal(t,"tailbase","tailcentre","tailcentre","tailtip")
+  dat$A2 <- GetAngleTotal(t,"hipr","tailbase","tailbase","hipl")
+  dat$A3 <- GetAngleTotal(t,"tailbase","bodycentre","bodycentre","neck")
+  dat$A4 <- GetAngleTotal(t,"bcr","bodycentre","bodycentre","bcl")
+  dat$A5 <- GetAngleTotal(t,"bodycentre","neck","neck","headcentre")
+  dat$A6 <- GetAngleTotal(t,"tailbase","bodycentre","neck","headcentre")
+  dat$Ar1 <- GetPolygonAreas(t,c("tailbase","hipr","hipl"))
+  dat$Ar2 <- GetPolygonAreas(t,c("hipr","hipl","bcl","bcr"))
+  dat$Ar3 <- GetPolygonAreas(t,c("bcr","earr","earl","bcl"))
+  dat$Ar4 <- GetPolygonAreas(t,c("earr","nose","earl"))
+  dat$D1 <- GetDistanceToZoneBorder(t,"arena","nose")
+  dat$D2 <- GetDistanceToZoneBorder(t,"arena","neck")
+  dat$D3 <- GetDistanceToZoneBorder(t,"arena","bodycentre")
+  dat$D4 <- GetDistanceToZoneBorder(t,"arena","tailbase")
+  dat <- as.data.frame(dat) 
+  t$features <- dat
+  
+  return(t)
+}
 
 CreateSkeletonData_FST_v2 <- function(t){
   if(!IsTrackingData(t)){
@@ -733,13 +830,25 @@ CreateAccelerationFeatures<- function(t){
   return(t)
 }
 
-ZscoreNormalizeSkeleton <- function(t, omit = NULL){
+ZscoreNormalizeFeatures <- function(t, omit = NULL, include = NULL, type = "mean"){
   if(!IsTrackingData(t)){
     stop("Object is not of type TrackingData")
   }
+  if(is.null(t$features)){
+    stop("Object has no feature data")
+  }
   change <- setdiff(names(t$features),omit)
+  if(!is.null(include)){
+    change <- intersect(change, include)
+  }
   for(i in change){
-    t$features[i] <- NormalizeZscore(t$features[i])
+    if(type == "median"){
+      t$features[i] <- NormalizeZscore_median(t$features[i])
+    }else if(type == "median"){
+      t$features[i] <- NormalizeZscore(t$features[i])
+    }else{
+      warning("invalid normalization method")
+    }
   }
   return(t)
 }
@@ -749,7 +858,13 @@ PlotDensityPaths <- function(t,points,SDcutoff = 4, Title = "density path"){
     stop("Object is not of type TrackingData")
   }
   out <- NULL
+  
+  SDPlot <- function(x,nSD){
+    ifelse((mean(x) - x) / sd(x) > -nSD, x, mean(x) + nSD * sd(x))
+  }
+  
   for(i in points){
+    
     data_plot <- t$data[[i]]
     xbreaks <- seq(floor(min(data_plot$x)), ceiling(max(data_plot$x)), by = 0.1)
     ybreaks <- seq(floor(min(data_plot$y)), ceiling(max(data_plot$y)), by = 0.1)
@@ -766,9 +881,6 @@ PlotDensityPaths <- function(t,points,SDcutoff = 4, Title = "density path"){
   return(out)
 }
 
-SDPlot <- function(x,nSD){
-  ifelse((mean(x) - x) / sd(x) > -nSD, x, mean(x) + nSD * sd(x))
-}
 
 SmoothLabel <- function(x, integration_period){
   types <-unique(x)
@@ -782,8 +894,8 @@ SmoothLabel <- function(x, integration_period){
 
 AddZonesToPlots <- function(p,z){
   for(i in 1:length(p)){
-      for(j in z){
-    p[[i]] <- p[[i]] + geom_path(data=j[c(1:nrow(j),1),],aes(x,y))
+    for(j in z){
+      p[[i]] <- p[[i]] + geom_path(data=j[c(1:nrow(j),1),],aes(x,y))
     }
   }
   return(p)
@@ -805,7 +917,7 @@ PlotZones <- function(t, zones = NULL){
     dat <- t$zones[[i]]
     p <- p + geom_path(data=dat[c(1:nrow(dat),1),],aes(x,y))
   }
-  return(p)
+  return(p + theme_bw())
 }
 
 AddZones <- function(t,z){
@@ -873,6 +985,9 @@ FSTAnalysis <- function(t, cutoff_floating, integration_period = 0, points, Obje
   if(!IsTrackingData(t)){
     stop("Object is not of type TrackingData")
   }
+  if(sum(t$point.info$PointType == Object) == 0){
+    stop("Object to be tracked not available in point info")
+  }
   for(i in 1:length(t$data)){
     t$data[[i]]$delta_x <- integratevector(t$data[[i]]$x)
     t$data[[i]]$delta_y <- integratevector(t$data[[i]]$y)
@@ -880,28 +995,31 @@ FSTAnalysis <- function(t, cutoff_floating, integration_period = 0, points, Obje
     t$data[[i]]$acceleration <- integratevector(t$data[[i]]$speed)
   }
   
-    temp <- t$data[as.character(t$point.info[t$point.info$PointType == Object,"PointName"])]
-    acc <- NULL
-    for(i in 1:length(temp)){
-      acc <- cbind(acc, i = temp[[i]]$acceleration)
-    }
-
-    t$object <- list()
-    t$object$movement <- abs(apply(acc,1,FUN = mean))
-    t$object$is.floating <- avgmean(t$object$movement,integration_period) < cutoff_floating
-    t$labels$cutoff.floating <- ifelse(t$object$is.floating == 1, "Floating","None")
+  temp <- t$data[as.character(t$point.info[t$point.info$PointType == Object,"PointName"])]
+  acc <- NULL
+  for(i in 1:length(temp)){
+    acc <- cbind(acc, i = temp[[i]]$acceleration)
+  }
   
-    t$Report <- list()
-    t$Report[["time.floating"]] <- sum(t$object$is.floating) / t$fps
-    t$Report[["total.time"]] <- length(t$object$is.floating) / t$fps
-    t$Report[["percentage.floating"]] <- sum(t$object$is.floating) / length(t$object$is.floating) * 100
-    
-    for(k in points){
-      t$Report[[paste(k, "raw.distance", sep = ".")]] <- sum(t$data[[k]]$speed, na.rm = T)
-      t$Report[[paste(k, "raw.speed", sep = ".")]] <- mean(t$data[[k]]$speed, na.rm = T) * t$fps
-      t$Report[[paste(k, "distance.swiming", sep = ".")]] <- sum(t$data[[k]]$speed[!t$object$is.floating], na.rm = T)
-      t$Report[[paste(k, "speed.swiming", sep = ".")]] <- mean(t$data[[k]]$speed[!t$object$is.floating], na.rm = T) * t$fps
-      }
+  t$object <- list()
+  t$object$movement <- abs(apply(acc,1,FUN = mean))
+  t$object$is.floating <- avgmean(t$object$movement,integration_period) < cutoff_floating
+  t$labels$cutoff.floating <- ifelse(t$object$is.floating == 1, "Floating","None")
+  
+  t$Report <- list()
+  t$Report[["time.floating"]] <- sum(t$object$is.floating) / t$fps
+  t$Report[["total.time"]] <- length(t$object$is.floating) / t$fps
+  t$Report[["percentage.floating"]] <- sum(t$object$is.floating) / length(t$object$is.floating) * 100
+  
+  for(k in points){
+    if(!k %in% names(t$data)){
+      stop(paste("point", k, "not vaild", sep = " "))
+    }
+    t$Report[[paste(k, "raw.distance", sep = ".")]] <- sum(t$data[[k]]$speed, na.rm = T)
+    t$Report[[paste(k, "raw.speed", sep = ".")]] <- mean(t$data[[k]]$speed, na.rm = T) * t$fps
+    t$Report[[paste(k, "distance.swiming", sep = ".")]] <- sum(t$data[[k]]$speed[!t$object$is.floating], na.rm = T)
+    t$Report[[paste(k, "speed.swiming", sep = ".")]] <- mean(t$data[[k]]$speed[!t$object$is.floating], na.rm = T) * t$fps
+  }
   
   return(t)
 }  
@@ -995,9 +1113,15 @@ periodsum <- function(x, window){
   return(res)
 }
 
-CreateTrainingSet <- function(t, integration_period){
+CreateTrainingSet <- function(t, integration_period, label.group = "manual"){
   if(!IsTrackingData(t)){
     stop("Object is not of type TrackingData")
+  }
+  if(is.null(t$labels[[label.group]])){
+    stop("manual labels or specified label group does not exist")
+  }
+  if(is.null(t$features)){
+    stop("no feature data available. can not create training set")
   }
   x <- t$features
   x_window <- x[1:(nrow(x) - 2*integration_period),]
@@ -1008,7 +1132,7 @@ CreateTrainingSet <- function(t, integration_period){
     }
   }
   t$train_x <- as.matrix(x_window)
-  t$train_y <- t$labels$manual[(integration_period + 1):(length(t$labels$manual) - integration_period)]
+  t$train_y <- t$labels[[label.group]][(integration_period + 1):(length(t$labels[[label.group]]) - integration_period)]
   t$ml_integration <- integration_period
   return(t)
 }
@@ -1054,7 +1178,10 @@ PlotLabels <- function(t, p.size = 2){
   for(i in names(t$labels)){
     dat <- rbind(dat,data.frame(seconds = t$seconds, behavior =  t$labels[[i]], type = i))
   }
-  ggplot(data = na.omit(dat),aes(seconds, behavior, color = behavior)) + geom_point(size = p.size, shape = 124) + facet_grid(type~., scales = "free_y")
+  ggplot(data = na.omit(dat),aes(seconds, behavior, color = behavior)) + 
+    geom_point(size = p.size, shape = 124) + 
+    facet_grid(type~., scales = "free_y") +
+    theme_bw()
 }
 
 PlotZoneVisits <- function(t, points, zones = NULL, p.size = 2){
@@ -1084,7 +1211,9 @@ PlotZoneVisits <- function(t, points, zones = NULL, p.size = 2){
     }
   }
   
-  ggplot(data = na.omit(dat),aes(seconds, zone, color = zone)) + geom_point(size = p.size, shape = 124) + facet_grid(points~.)
+  ggplot(data = na.omit(dat),aes(seconds, zone, color = zone)) + 
+    geom_point(size = p.size, shape = 124) + 
+    facet_grid(points~.) + theme_bw()
 }
 
 PlotPointData <- function(t, points = NULL, from = NULL, to = NULL, unit = "frame", type = NULL){
@@ -1121,7 +1250,7 @@ PlotPointData <- function(t, points = NULL, from = NULL, to = NULL, unit = "fram
   nplot <- 0
   
   for(i in points){
-    p <- p + draw_plot(ggplot(data = t$data[[i]][t$data[[i]]$frame %in% range,], aes(x,y, color = likelihood)) + geom_path() + ggtitle(i) + xlab(paste("x /",t$distance.units,sep = " ")) + ylab(paste("y /",t$distance.units,sep = " ")), 
+    p <- p + draw_plot(ggplot(data = t$data[[i]][t$data[[i]]$frame %in% range,], aes(x,y, color = likelihood)) + geom_path() + ggtitle(i) + xlab(paste("x /",t$distance.units,sep = " ")) + ylab(paste("y /",t$distance.units,sep = " ")) + theme_bw(), 
                        x = (nplot %% dim / dim),
                        y = ((dim - 1)/ dim) - floor(nplot / dim) / dim, 
                        width = 1/dim, 
@@ -1135,7 +1264,7 @@ PlotPointData <- function(t, points = NULL, from = NULL, to = NULL, unit = "fram
 RunPipeline <- function(files, path, FUN){
   out <- list()
   for(j in files){
-  out[[paste(j)]] <- FUN(paste(path,j,sep = ""))
+    out[[paste(j)]] <- FUN(paste(path,j,sep = ""))
   }
   return(out)
 }
@@ -1150,12 +1279,12 @@ CombineTrainingsData <- function(ts, shuffle =TRUE){
   train_x <- NULL
   train_y <- NULL
   for(i in names(ts)){
-      if(is.null(ts[[i]]$train_x) | is.null(ts[[i]]$train_y)){
-        warning(paste("File:",i,"is missing trainings data. data for this file not included"))
-      }else{
-        train_x <- rbind(train_x,ts[[i]]$train_x)
-        train_y <- append(train_y,ts[[i]]$train_y)
-      }
+    if(is.null(ts[[i]]$train_x) | is.null(ts[[i]]$train_y)){
+      warning(paste("File:",i,"is missing trainings data. data for this file not included"))
+    }else{
+      train_x <- rbind(train_x,ts[[i]]$train_x)
+      train_y <- append(train_y,ts[[i]]$train_y)
+    }
   }
   out <- PrepareMLData(train_x,train_y, shuffle)
   out$parameters$integration_period <- ts[[1]]$ml_integration
@@ -1177,9 +1306,9 @@ PrepareMLData <- function(x_train, y_train, shuffle = TRUE){
   y_train_cat <- to_categorical(-1 + as.integer(as.factor(y_train)))
   
   if(shuffle){
-  new_order <- sample(1:nrow(y_train_cat))
-  x_train <- x_train[new_order,]
-  y_train_cat <- y_train_cat[new_order,]
+    new_order <- sample(1:nrow(y_train_cat))
+    x_train <- x_train[new_order,]
+    y_train_cat <- y_train_cat[new_order,]
   }
   out$train_x <- x_train
   out$train_y <- y_train_cat
@@ -1193,7 +1322,7 @@ SmoothLabels <- function(t, integration_period){
   }
   if(length(t$labels) == 0){
     warning("No labels present. Returning original object")
-      return(t)
+    return(t)
   }
   for(i in names(t$labels)){
     t$labels[[i]] <- SmoothLabel(t$labels[[i]], integration_period)
@@ -1201,7 +1330,7 @@ SmoothLabels <- function(t, integration_period){
   return(t)
 }
 
-UnsupervisedClusteringKmeans <- function(ts, N_clusters = 20, Z_score_Normalize = TRUE){
+UnsupervisedClusteringKmeans <- function(ts, N_clusters = 20, Z_score_Normalize = TRUE, dimensions = NULL){
   if(IsTrackingData(ts)){
     print("single file detected. Runing kmeans in single file mode")
     if(is.null(ts$train_x)){
@@ -1214,7 +1343,7 @@ UnsupervisedClusteringKmeans <- function(ts, N_clusters = 20, Z_score_Normalize 
     else{
       test <- kmeans(ts$train_x,centers = N_clusters)
     }
-    ts$labels$unsupervised <- c(rep(NA,j$ml_integration),as.character(test$cluster),rep(NA,j$ml_integration))
+    ts$labels$unsupervised <- c(rep(NA,ts$ml_integration),as.character(test$cluster),rep(NA,ts$ml_integration))
     return(ts)
   }
   
@@ -1229,10 +1358,15 @@ UnsupervisedClusteringKmeans <- function(ts, N_clusters = 20, Z_score_Normalize 
     allx <- rbind(allx, ts[[j]]$train_x)
     id <- append(id, rep(paste(j),nrow(ts[[j]]$train_x)))
   }
-
+  
   if(Z_score_Normalize){
     allx <- NormalizeZscore(allx)
   }
+  
+  if(!is.null(dimensions)){
+    allx <- svd(allx, nu = dimensions, nv = 0)$u
+  }
+  
   test <- kmeans(allx,centers = N_clusters)
   
   for(j in names(ts)){
@@ -1243,7 +1377,16 @@ UnsupervisedClusteringKmeans <- function(ts, N_clusters = 20, Z_score_Normalize 
   return(ts)
 }
 
-
+#' Plots the zone selection of a zone in an object of type TrackingData
+#' 
+#' @param t a objects of type TrackingData
+#' @param point string. name of the point to be plotted
+#' @param zones string or vector of strings. name of zones to be selected
+#' @param invert boolean. a checkt to determine if the zone or a inversion of the zone should be used. defaults to FALSE
+#' @return a plot
+#' @examples
+#' MultiFileReport(TrackingAll)
+#'
 PlotZoneSelection <- function(t,point,zones, invert = FALSE){
   if(!IsTrackingData(t)){
     stop("Object is not of type TrackingData")
@@ -1265,10 +1408,17 @@ PlotZoneSelection <- function(t,point,zones, invert = FALSE){
   if(invert){
     in.zone <- !in.zone
   }
-  p <- ggplot(dat,aes(x,y, color = in.zone)) + geom_point()
+  p <- ggplot(dat,aes(x,y, color = in.zone)) + geom_point() + theme_bw()
   return(p)
 }
 
+#' Creates a combined report of all files in a list of TrackingData objects
+#' 
+#' @param ts list of objects of type TrackingData
+#' @return a data.frame
+#' @examples
+#' MultiFileReport(TrackingAll)
+#'
 MultiFileReport <- function(ts){
   if(IsTrackingData(ts)){
     stop("Expected a list() of TrackingData objects. You entered a single object")
@@ -1288,6 +1438,15 @@ MultiFileReport <- function(ts){
   return(data.frame(out))
 }
 
+#' Performs a specified analysis on a list() of TrackingData objects and produces a final report
+#' 
+#' @param ts list of objects of type TrackingData
+#' @param FUN An analysis function that should be applied to bins
+#' @param ... any paramteres that are required for the function FUN
+#' @return a data.frame
+#' @examples
+#' MultiFileBinanalysis(TrackingAll, FUN = OFTAnalysis, movement_cutoff = 5,integration_period = 5,points = "bodycentre")
+#'
 MultiFileBinanalysis <- function(ts, FUN, ...){
   if(IsTrackingData(ts)){
     stop("Expected a list() of TrackingData objects. You entered a single object")
@@ -1304,6 +1463,20 @@ MultiFileBinanalysis <- function(ts, FUN, ...){
   return(out)
 }
 
+#' Creates an density path plot pdf for one or multiple objects of type TrackingData
+#' 
+#' @param ts list or single object of type TrackingData
+#' @param points A string or vector of strings. name of the point(s) to be plotted
+#' @param filename A string. the name of the pdf file. defaults to "DensityPathMulti"
+#' @param width a numeric value. width of the plot in inch. defaults to 10
+#' @param height a numeric value. height of the plot in inch. defaults to 8
+#' @param add_zones a boolean check. should zones be plotted to the density path? requires all objects to have zones. default to FALSE
+#' @param selected_zones a string or vector of strings. zone names of the zones to be plotted. default to NULL (= plot all)
+#' @param ... any parameter(s) that is used for the function PlotZoneVisits()
+#' @return NULL. creates a pdf file in the working directory
+#' @examples
+#' PlotZoneVisits.Multi.PDF(TrackingAll, filename = "MyZoneVisits")
+#'
 PlotDensityPaths.Multi.PDF <- function(ts, points, filename = "DensityPathMulti",width = 10, height = 8, add_zones = FALSE, selected_zones = NULL, ...){
   if(IsTrackingData(ts)){
     x <- ts
@@ -1313,26 +1486,26 @@ PlotDensityPaths.Multi.PDF <- function(ts, points, filename = "DensityPathMulti"
   out <- list()
   for(i in names(ts)){
     if(IsTrackingData(ts[[i]])){
-        ps <- PlotDensityPaths(ts[[i]],points = points, Title = i, ...)
-        
-        if(add_zones){
-          if(!is.null(ts[[i]]$zones)){
-            if(is.null(selected_zones)){
-              zones <- names(ts[[i]]$zones)
-            }else{
-              zones <- intersect(names(ts[[i]]$zones), selected_zones)
-            }
-            if(length(zones) == 0){
-              warning(paste("in file:", i, "none of the indicated zones found in data", sep = " "))
-            }
-            else{
-              ps <- AddZonesToPlots(ps,ts[[i]]$zones[zones])
-            }
+      ps <- PlotDensityPaths(ts[[i]],points = points, Title = i, ...)
+      
+      if(add_zones){
+        if(!is.null(ts[[i]]$zones)){
+          if(is.null(selected_zones)){
+            zones <- names(ts[[i]]$zones)
           }else{
-            warning(paste("can not add zones to",i, ".Does not have zones defined", sep = " "))
+            zones <- intersect(names(ts[[i]]$zones), selected_zones)
           }
+          if(length(zones) == 0){
+            warning(paste("in file:", i, "none of the indicated zones found in data", sep = " "))
+          }
+          else{
+            ps <- AddZonesToPlots(ps,ts[[i]]$zones[zones])
+          }
+        }else{
+          warning(paste("can not add zones to",i, ".Does not have zones defined", sep = " "))
         }
-        out <- append(out,ps)
+      }
+      out <- append(out,ps)
     }else{
       warning(paste("List contains an element that is not of type TrackingData:",i,".No plot produced for these", sep = " "))
     }
@@ -1345,6 +1518,17 @@ PlotDensityPaths.Multi.PDF <- function(ts, points, filename = "DensityPathMulti"
   return(NULL)
 }
 
+#' Creates an zone visit plot pdf for one or multiple objects of type TrackingData
+#' 
+#' @param ts list or single object of type TrackingData
+#' @param filename A string. the name of the pdf file. defaults to "ZoneVisitsMulti"
+#' @param width a numeric value. width of the plot in inch. defaults to 10
+#' @param height a numeric value. height of the plot in inch. defaults to 8
+#' @param ... any parameter(s) that is used for the function PlotZoneVisits()
+#' @return NULL. creates a pdf file in the working directory
+#' @examples
+#' PlotZoneVisits.Multi.PDF(TrackingAll, filename = "MyZoneVisits")
+#'
 PlotZoneVisits.Multi.PDF <- function(ts, points,filename = "ZoneVisitsMulti", width = 10, height = 8,...){
   if(IsTrackingData(ts)){
     x <- ts
@@ -1360,7 +1544,18 @@ PlotZoneVisits.Multi.PDF <- function(ts, points,filename = "ZoneVisitsMulti", wi
   return(NULL)
 }
 
-PlotLabels.Multi.PDF <- function(ts, filename = "LabelsMulti", width = 10, height = 8,...){
+#' Creates an labels plot pdf for one or multiple objects of type TrackingData
+#' 
+#' @param ts list or single object of type TrackingData
+#' @param filename A string. the name of the pdf file. defaults to "LabelsMulti"
+#' @param width a numeric value. width of the plot in inch. defaults to 10
+#' @param height a numeric value. height of the plot in inch. defaults to 8
+#' @param ... any parameter(s) that is used for the function PlotLabels()
+#' @return NULL. creates a pdf file in the working directory
+#' @examples
+#' PlotLabels.Multi.PDF(TrackingAll, filename = "MyLabels")
+#'
+PlotLabels.Multi.PDF <- function(ts, filename = "LabelsMulti", width = 10, height = 8, ...){
   if(IsTrackingData(ts)){
     x <- ts
     ts <- list()
@@ -1375,6 +1570,14 @@ PlotLabels.Multi.PDF <- function(ts, filename = "LabelsMulti", width = 10, heigh
   return(NULL)
 }
 
+#' Creates an overview plot for a object of type TrackingData
+#' 
+#' @param t object of type TrackingData
+#' @param point a string indicating the name of the point to be plotted
+#' @return a plot
+#' @examples
+#' NormalizeZscore(Trackingdata, point = "bodycentre")
+#'
 OverviewPlot <- function(t, point){
   if(!IsTrackingData(t)){
     stop("Input needs to be a single object of type Tracking")
@@ -1387,7 +1590,7 @@ OverviewPlot <- function(t, point){
   title <- ggdraw() + draw_label(paste("Overview file",t$filename, sep = " "))
   p1 <- PlotDensityPaths(t,point)
   if(!is.null(t$zones)){
-  p1 <- AddZonesToPlots(p1, t$zones)
+    p1 <- AddZonesToPlots(p1, t$zones)
   }
   p1 <- p1[[1]] + scale_y_reverse()
   
@@ -1412,14 +1615,35 @@ OverviewPlot <- function(t, point){
   }
 }
 
+#' mean Zscore normalization of a numeric matrix across columns
+#' 
+#' @param x a numeric matrix
+#' @return a numeric matrix
+#' @examples
+#' NormalizeZscore(mymatrix)
+#'
 NormalizeZscore <- function(x){
   apply(x, 2, FUN = function(x){(x - mean(x)) / (sd(x))})
 }
 
+#' median Zscore normalization of a numeric matrix across columns
+#' 
+#' @param x a numeric matrix
+#' @return a numeric matrix
+#' @examples
+#' NormalizeZscore_median(mymatrix)
+#'
 NormalizeZscore_median <- function(x){
   apply(x, 2, FUN = function(x){(x - median(x)) / (sd(x))})
 }
 
+#' integration of a numeric vector
+#' 
+#' @param x a numeric vector
+#' @return a numeric vector
+#' @examples
+#' integratevector(myvector)
+#'
 integratevector <- function(x){
   if(length(x) < 2){
     stop("can  not integrate a vector of length < 2")
@@ -1427,6 +1651,14 @@ integratevector <- function(x){
   append(0, x[2:length(x)] - x[1:(length(x)-1)])
 }
 
+#' Boolean smoothing over an integration period
+#' 
+#' @param x a boolean vector
+#' @param window a integration window length (in +- window entries)
+#' @return a boolean vector
+#' @examples
+#' avgbool(booleanvector, window = 10)
+#' 
 avgbool <- function(x, window){
   res <- rep(0, length(x))
   for(i in 1:length(x)){
@@ -1435,7 +1667,15 @@ avgbool <- function(x, window){
   return(res)
 }
 
-equalizeSets <- function(x,y){
+#' Equalizes a training set so every group is equaly represented
+#' 
+#' @param x the training data
+#' @param y the categorical labeling data (as produced by the library(keras) funciton to_categorical)
+#' @return a list with 2 elements, adjusted x and adjusted y
+#' @examples
+#' EqualizeTrainingSet(x_train,y_train)
+#' 
+EqualizeTrainingSet <- function(x,y){
   N_obs <- NULL
   for(i in 1:ncol(y)){
     N_obs <- append(N_obs,sum(y[,i]))
@@ -1452,6 +1692,17 @@ equalizeSets <- function(x,y){
   return(out)
 }
 
+
+#' Evaluates the performance of the classifier across one or mutlipe TrackingData objects by comparing a ground truth to any label
+#' 
+#' @param ts a list of objects of type TrackingData or a single object of type TrackingData
+#' @param truth name of the label group that is considered the ground truth. by default "manual"
+#' @param compare name of the label group that is considered the label to compare. by default "classifications"
+#' @return a Report object with two sub-object, each a data.frame for the evaluation across or within files
+#' @examples
+#' EvaluateClassification(ts)
+#' EvaluateClassification(ts, truth = "manual", compare = "classifications")
+#' 
 EvaluateClassification <- function(ts, truth = "manual", compare = "classifications"){
   if(IsTrackingData(ts)){
     x <- ts
@@ -1501,14 +1752,29 @@ EvaluateClassification <- function(ts, truth = "manual", compare = "classificati
                                                        wrong = s[2],
                                                        N_truth = s[3],
                                                        N_compare = s[4]
-                                                       ))
+    ))
   }
   return(Report)
 }
 
-CorrelationPlotLabels <- function(ts, include = NULL){
+
+#' Creates correlation plots between different labels over multiple files
+#' 
+#' @param ts a list of objects of type TrackingData
+#' @param include a character vector that describes which labels to include. defaults to all
+#' @param smooth a integer that describes over how many frames labels should be smoothed. defaults to NULL = no smoothing.
+#' @param hclust a boolean that decides if plots should be ordered by hclust
+#' @return a correlation plot
+#' @examples
+#' CorrelationPlotLabels(ts)
+#' CorrelationPlotLabels(ts, include = c("manual.Unsupported.count","classification.Unsupported.count","manual.Supported.count","classification.Supported.count"), hclust = TRUE)
+#' 
+CorrelationPlotLabels <- function(ts, include = NULL, smooth = NULL, hclust = FALSE){
   compare <- list()
   for(i in ts){
+    if(!is.null(smooth)){
+      i <- SmoothLabels(i, smooth)
+    }
     compare <- rbindlist(list(compare,LabelReport(i)),use.names = TRUE, fill = TRUE,idcol = F)
   }
   compare <-as.data.frame(compare)
@@ -1517,14 +1783,214 @@ CorrelationPlotLabels <- function(ts, include = NULL){
     include <- names(compare)
   }
   
-  corrplot(cor(as.matrix(na.replace(compare[,include]))),
+  if(hclust){
+    corrplot(cor(as.matrix(na_replace(compare[,include]))),title = "Correlation Plot", 
+             method = "square", 
+             outline = T, 
+             addgrid.col = "darkgray", 
+             order="hclust")
+  }else{
+  corrplot(cor(as.matrix(na_replace(compare[,include]))),
            method="color",
            type = "upper",
            addCoef.col = "black")
+  }
+}
+
+#' Extracts labels from a long format data.frame
+#' 
+#' @param lab a long format data frame with labeling data
+#' @param Experimenter a character or vector of character. the name of the experimenter(s) that should be extracted
+#' @param type a character or vector of character. the name of type(s) that should be extracted
+#' @param DLCFile a character or vector of character. the name of DLCFile(s) that should be extracted
+#' @param ID a character or vector of character. the name of ID(s) that should be extracted
+#' @return a data.frame extracted labels
+#' @examples
+#' ExtractLabels(lab, Experimenter = "Oliver", DLCFile = "FST_1.csv")
+#' ExtractLabels(lab, Experimenter = "Oliver", type = c("Supported","Unsupported"))
+#' 
+ExtractLabels <- function(lab, Experimenter=NULL, type = NULL, DLCFile = NULL, ID = NULL){
+  if(!is.null(Experimenter)){
+    lab <- lab[lab$Experimenter %in% Experimenter,]
+  }
+  if(!is.null(type)){
+    lab <- lab[lab$type %in% type,]
+  }
+  if(!is.null(DLCFile)){
+    lab <- lab[lab$DLCFile %in% DLCFile,]
+  }
+  if(!is.null(ID)){
+    lab <- lab[lab$ID %in% ID,]
+  }
+  return(lab)
+}
+
+#' Linearly scales a number of features by a set scaling factor
+#' 
+#' @param feat a numeric data.frame or matrix
+#' @param select if set, a vector of column names that should be scaled. otherwise all will be scaled
+#' @param factor vector of column names that should be scaled
+#' @return a numeric data.frame or matrix
+#' @examples
+#' ScaleFeatures(feat, factor = 0.3)
+#' ScaleFeatures(feat, select = c("feat1","feat3"), factor = 2)
+#'
+ScaleFeatures <- function(feat, select = NULL, factor){
+  if(is.null(select)){
+    feat <- names(feat)
+  }
+  feat[,select] <- feat[,select] * factor
+  return(feat)
+}
+
+#' Combines multiple specified labels into a new, seperate label
+#' 
+#' @param ts a list of objects of type TrackingData or a single object of type TrackingData
+#' @param which.lab the name of the label group that should be used, defaults to "unsupervised"
+#' @param by a vector of label names that should be aggregated
+#' @param name a string that contains the name of the newly created lable group
+#' @return a list of objects of type TrackingData or a single object of type TrackingData
+#' @examples
+#' CombineLabels(ts, which.lab = "manual", by = c("Unsupported","Supported"), name = "AllRears")
+#' CombineLabels(ts, which.lab = "unsupervised", by = list(c("cluster1","cluster2"),c("cluster5","cluster12","cluster6"),c("cluster8")), name = "CombinedClusters")
+#' 
+CombineLabels <- function(ts, which.lab = "unsupervised", by, name = "combined"){
+  if(IsTrackingData(ts)){
+    x <- ts
+    ts <- list()
+    ts[[paste(x$filename)]] <- x
+  }
+  
+  for(i in names(ts)){
+    if(!IsTrackingData(ts[[i]])){
+      stop(paste("element",i,"is not of type TrackingData", sep = " "))
+    }
+    if(is.null(ts[[i]]$labels)){
+      warning(paste("element",i,"has no labeling data", sep = " "))
+      return(ts)
+    }
+    if(is.null(ts[[i]]$labels[[which.lab]])){
+      warning(paste("element",i,"has no labeling data of type", which.lab, sep = " "))
+      return(ts)
+    }
+    cdat <- ts[[i]]$labels[[which.lab]]
+    out <- rep("None", length(ts[[i]]$labels[[which.lab]]))
+    for(j in by){
+      out[cdat %in% j] <- paste(j, collapse = ".")
+    }
+    ts[[i]]$labels[[name]] <- out
+  }
+  if(length(ts) > 1){
+  return(ts)
+  }
+  return(ts[[1]])
 }
 
 
+#' Calculates the minimum distance of a point to a zone
+#' 
+#' @param t an object of type TrackingData
+#' @param zone a name of zone (has to be present in t)
+#' @param point a name of point (has to be present in t)
+#' @return an array of distances of point p to edge of the zone at each frame
+#' @examples
+#' GetDistanceToZoneBorder(t = Tracking, zone = "arena", point = "bodycentre")
+#' 
+GetDistanceToZoneBorder <- function(t,zone,point){
+  if(!IsTrackingData(t)){
+    stop("Object is not of type TrackingData")
+  }
+  if(is.null(t$zones)){
+    stop("TrackingData object has no zones")
+  }
+  if(!(zone %in% names(t$zones))){
+    stop("invalid zone")
+  }
+  if(!(point %in% names(t$data))){
+    stop("invalid point")
+  }
+  return(DistanceToPolygon(t$data[[point]][,c("x","y")], t$zones[[zone]][,c("x","y")]))
+}
 
+#' Calculates the minimum distance of a point p to any edge of a polygon pol
+#' 
+#' @param p a list() or data.frame() of a point. needs to contain p$x and p$y
+#' @param pol a data.frame() of a polygon. needs to contain at least to columns, pol$x and pol$y
+#' @return an object of type TrackingData 
+#' @examples
+#' DistanceToPolygon(p = data.frame(x = 0.5, y = 0.7), pol = data.frame(x = c(1,1,0,0), y = c(1,0,0,1)))
+#' 
+DistanceToPolygon <- function(p,pol){
+  dist2d <- function(a,b,c){
+    v1x <- b$x - c$x
+    v1y <- b$y - c$y
+    v2x <- a$x - b$x
+    v2y <- a$y - b$y
+    det <- v1x*v2y - v1y*v2x 
+    
+    d <- abs(det)/sqrt(v1x*v1x + v1y*v1y)
+    return(d)
+  } 
+  
+  pol <- pol[c(1:nrow(pol),1),]
+  dist <- NULL
+  
+  for(i in 1:(nrow(pol) - 1)){
+    dist <-  cbind(dist,dist2d(p, pol[i,], pol[i + 1,]))
+  }
+  return(apply(dist, 1, FUN=min))
+}
 
-
-
+#' Rotates an object of type Tracking data around a center of gravity defined by a number of points. rotation can be defined in degree, or alternatively a line of to points can be set parallel to the x-axis
+#' 
+#' @param t an object of type TrackingData
+#' @param theta an angle in degree
+#' @param center.of a vector of point names used to define a rotation center (mean value of x and y coordinats of the specified points)
+#' @param set.straight.to.x a vector with the names of two points that define a line that should be set parallel to the x-axis
+#' @return an object of type TrackingData 
+#' @examples
+#' RotateTrackingData(t = Tracking,theta = 45, center.of = c("tl","tr","bl","br"))
+#' RotateTrackingData(t = Tracking,set.straight.to.x = c("br","tr"), center.of = c("tl","tr","bl","br"))
+#' 
+RotateTrackingData <- function(t, theta = 0, center.of = c("tl","tr","bl","br"), set.straight.to.x = NULL){
+  theta <- theta * pi / 180
+  if(!IsTrackingData(t)){
+    stop("Object is not of type TrackingData")
+  }
+  if(sum(center.of %in% names(t$data)) != length(center.of)){
+    stop("invalid points selected for center.of")
+  }
+  if(!is.null(set.straight.to.x)){
+    if(length(set.straight.to.x) != 2 | sum(set.straight.to.x %in% names(t$data)) != 2){
+      stop("invalid set.straigth.to.x: needs to be a vector with valid point names of exactly 2 points that define a line")
+    }
+    ax <- t$median.data[set.straight.to.x[2],"x"] - t$median.data[set.straight.to.x[1],"x"] 
+    ay <- t$median.data[set.straight.to.x[2],"y"] - t$median.data[set.straight.to.x[1],"y"] 
+    print(ax)
+    print(ay)
+    theta = -acos(abs(ax) / sqrt(ax*ax + ay*ay))
+  }
+  center_x <- mean(t$median.data[center.of,"x"])
+  center_y <- mean(t$median.data[center.of,"y"])
+  
+  if(!is.null(t$zones)){
+    for(i in names(t$zones)){
+      old_x <- t$zones[[i]]$x - center_x
+      old_y <- t$zones[[i]]$y - center_y
+      t$zones[[i]]$x <- old_x * cos(theta) - old_y * sin(theta) + center_x
+      t$zones[[i]]$y <- old_x * sin(theta) + old_y * cos(theta) + center_y
+    }
+  }
+  for(i in names(t$data)){
+    old_x <- t$data[[i]]$x - center_x
+    old_y <- t$data[[i]]$y - center_y
+    t$data[[i]]$x <- old_x * cos(theta) - old_y * sin(theta) + center_x
+    t$data[[i]]$y <- old_x * sin(theta) + old_y * cos(theta) + center_y
+  }
+  
+  old_x <- t$median.data$x - center_x
+  old_y <- t$median.data$y - center_y
+  t$median.data$x <- old_x * cos(theta) - old_y * sin(theta) + center_x
+  t$median.data$y <- old_x * sin(theta) + old_y * cos(theta) + center_y
+  return(t)
+}
