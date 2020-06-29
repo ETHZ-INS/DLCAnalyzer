@@ -844,7 +844,7 @@ ZscoreNormalizeFeatures <- function(t, omit = NULL, include = NULL, type = "mean
   for(i in change){
     if(type == "median"){
       t$features[i] <- NormalizeZscore_median(t$features[i])
-    }else if(type == "median"){
+    }else if(type == "mean"){
       t$features[i] <- NormalizeZscore(t$features[i])
     }else{
       warning("invalid normalization method")
