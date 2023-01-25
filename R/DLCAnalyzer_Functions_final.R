@@ -813,18 +813,10 @@ CreateAccelerationFeatures<- function(t){
   if(!IsTrackingData(t)){
     stop("Object is not of type TrackingData")
   }
-  dat <- data.frame(Ac1 = t$data[["nose"]]$acceleration)
-  dat$Ac2 <- t$data[["headcentre"]]$acceleration
-  dat$Ac3 <- t$data[["neck"]]$acceleration
-  dat$Ac4 <- t$data[["earr"]]$acceleration
-  dat$Ac5 <- t$data[["earl"]]$acceleration
-  dat$Ac6 <- t$data[["bodycentre"]]$acceleration
-  dat$Ac7 <- t$data[["bcl"]]$acceleration
-  dat$Ac8 <- t$data[["bcr"]]$acceleration
-  dat$Ac9 <- t$data[["hipl"]]$acceleration
-  dat$Ac10 <- t$data[["hipr"]]$acceleration
-  dat$Ac11 <- t$data[["tailbase"]]$acceleration
-  dat <- as.data.frame(dat) 
+  dat <- vapply(t$data, function(x) x$acceleration, FUN.VALUE = numeric(nrow(t$data$nose)))
+
+  dat <- as.data.frame(dat)
+  names(dat) <- paste0("Ac", 1:ncol(dat))
   t$features <- abs(dat)
   
   return(t)
